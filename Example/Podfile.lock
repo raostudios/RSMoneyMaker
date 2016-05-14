@@ -24,18 +24,18 @@ PODS:
   - RSInterfaceKit/RSSettings (0.0.35):
     - RSInterfaceKit/AutoLayoutHelpers
   - RSInterfaceKit/ZoomableImageView (0.0.35)
-  - RSStoreKit (0.0.3):
+  - RSMoneyMaker (0.0.3):
     - RSInterfaceKit
 
 DEPENDENCIES:
-  - RSStoreKit (from `../`)
+  - RSMoneyMaker (from `../`)
 
 EXTERNAL SOURCES:
-  RSStoreKit:
+  RSMoneyMaker:
     :path: "../"
 
 SPEC CHECKSUMS:
   RSInterfaceKit: 69b7a890a89e95f17a8d18e557cdf53855d8370d
-  RSStoreKit: 4025a401a97b3d125c53128cbe770acc70b69426
+  RSMoneyMaker: 317f592589dacc7a40d9ad3ca8d8e2e54c59bc6e
 
 COCOAPODS: 0.39.0

@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## RSStoreKit
+## RSMoneyMaker
 
 Copyright (c) 2015 Venkat S. Rao <vrao423@gmail.com>
 
