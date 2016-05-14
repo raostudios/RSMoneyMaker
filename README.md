@@ -1,6 +1,6 @@
 # RSStoreKit
 
-[![CI Status](http://img.shields.io/travis/raostudios/RSStoreKit.svg?style=flat)](https://travis-ci.org/raostudios/RSStoreKit)
+[![CI Status](https://travis-ci.org/raostudios/RSMoneyMaker.svg?branch=master)](https://travis-ci.org/raostudios/RSMoneyMaker)
 [![Version](https://img.shields.io/cocoapods/v/RSStoreKit.svg?style=flat)](http://cocoapods.org/pods/RSStoreKit)
 [![License](https://img.shields.io/cocoapods/l/RSStoreKit.svg?style=flat)](http://cocoapods.org/pods/RSStoreKit)
 [![Platform](https://img.shields.io/cocoapods/p/RSStoreKit.svg?style=flat)](http://cocoapods.org/pods/RSStoreKit)
