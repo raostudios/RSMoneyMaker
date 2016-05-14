@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "RSStoreKit.app"
-               BlueprintName = "RSStoreKit"
-               ReferencedContainer = "container:RSStoreKit.xcodeproj">
+               BuildableName = "RSMoneyMaker.app"
+               BlueprintName = "RSMoneyMaker"
+               ReferencedContainer = "container:RSMoneyMaker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
-               ReferencedContainer = "container:RSStoreKit.xcodeproj">
+               ReferencedContainer = "container:RSMoneyMaker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RSStoreKit.app"
-            BlueprintName = "RSStoreKit"
-            ReferencedContainer = "container:RSStoreKit.xcodeproj">
+            BuildableName = "RSMoneyMaker.app"
+            BlueprintName = "RSMoneyMaker"
+            ReferencedContainer = "container:RSMoneyMaker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RSStoreKit.app"
-            BlueprintName = "RSStoreKit"
-            ReferencedContainer = "container:RSStoreKit.xcodeproj">
+            BuildableName = "RSMoneyMaker.app"
+            BlueprintName = "RSMoneyMaker"
+            ReferencedContainer = "container:RSMoneyMaker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "RSStoreKit.app"
-            BlueprintName = "RSStoreKit"
-            ReferencedContainer = "container:RSStoreKit.xcodeproj">
+            BuildableName = "RSMoneyMaker.app"
+            BlueprintName = "RSMoneyMaker"
+            ReferencedContainer = "container:RSMoneyMaker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

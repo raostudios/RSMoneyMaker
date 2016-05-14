@@ -41,14 +41,14 @@
 		03DFC91CAF32C53A73BCA6C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		31532E8EDFD5E05AFA9497D4 /* Pods-RSStoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStoreKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSStoreKit/Pods-RSStoreKit.release.xcconfig"; sourceTree = "<group>"; };
 		4E9FC6DDAF246665804A5254 /* libPods-RSStoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSStoreKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* RSStoreKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSStoreKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* RSMoneyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSMoneyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* RSStoreKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSStoreKit-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* RSMoneyMaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSMoneyMaker-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* RSStoreKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSStoreKit-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* RSMoneyMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSMoneyMaker-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* RSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		8D11C2F1974ED59BC0A983E9 /* Pods-RSStoreKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStoreKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSStoreKit/Pods-RSStoreKit.debug.xcconfig"; sourceTree = "<group>"; };
 		BA223D0FC0195F380BB5B0BB /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAE63E7BFF10F639DCC010C4 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA0772217E86340089768685 /* RSStoreKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSStoreKit.podspec; path = ../RSStoreKit.podspec; sourceTree = "<group>"; };
+		DA0772217E86340089768685 /* RSMoneyMaker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSMoneyMaker.podspec; path = ../RSMoneyMaker.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* RSStoreKit */,
+				6003F593195388D20070C39A /* RSMoneyMaker */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -112,7 +112,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* RSStoreKit.app */,
+				6003F58A195388D20070C39A /* RSMoneyMaker.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -131,7 +131,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* RSStoreKit */ = {
+		6003F593195388D20070C39A /* RSMoneyMaker */ = {
 			isa = PBXGroup;
 			children = (
 				6003F59C195388D20070C39A /* RSAppDelegate.h */,
@@ -143,16 +143,17 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
+			name = RSMoneyMaker;
 			path = RSStoreKit;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* RSStoreKit-Info.plist */,
+				6003F595195388D20070C39A /* RSMoneyMaker-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* RSStoreKit-Prefix.pch */,
+				6003F59B195388D20070C39A /* RSMoneyMaker-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,7 +181,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				DA0772217E86340089768685 /* RSStoreKit.podspec */,
+				DA0772217E86340089768685 /* RSMoneyMaker.podspec */,
 				03DFC91CAF32C53A73BCA6C2 /* README.md */,
 				8C95C2CD909DD763629A4D77 /* LICENSE */,
 			);
@@ -201,9 +202,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* RSStoreKit */ = {
+		6003F589195388D20070C39A /* RSMoneyMaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSStoreKit" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSMoneyMaker" */;
 			buildPhases = (
 				E0F201457F9BB011BA741173 /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -216,9 +217,9 @@
 			);
 			dependencies = (
 			);
-			name = RSStoreKit;
+			name = RSMoneyMaker;
 			productName = RSStoreKit;
-			productReference = 6003F58A195388D20070C39A /* RSStoreKit.app */;
+			productReference = 6003F58A195388D20070C39A /* RSMoneyMaker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* Tests */ = {
@@ -257,7 +258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "RSStoreKit" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "RSMoneyMaker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -270,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* RSStoreKit */,
+				6003F589195388D20070C39A /* RSMoneyMaker */,
 				6003F5AD195388D20070C39A /* Tests */,
 			);
 		};
@@ -416,7 +417,7 @@
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* RSStoreKit */;
+			target = 6003F589195388D20070C39A /* RSMoneyMaker */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -537,11 +538,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RSStoreKit/RSStoreKit-Prefix.pch";
-				INFOPLIST_FILE = "RSStoreKit/RSStoreKit-Info.plist";
+				GCC_PREFIX_HEADER = "RSStoreKit/RSMoneyMaker-Prefix.pch";
+				INFOPLIST_FILE = "RSStoreKit/RSMoneyMaker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RSMoneyMaker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -553,11 +554,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RSStoreKit/RSStoreKit-Prefix.pch";
-				INFOPLIST_FILE = "RSStoreKit/RSStoreKit-Info.plist";
+				GCC_PREFIX_HEADER = "RSStoreKit/RSMoneyMaker-Prefix.pch";
+				INFOPLIST_FILE = "RSStoreKit/RSMoneyMaker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RSMoneyMaker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -609,7 +610,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "RSStoreKit" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "RSMoneyMaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -618,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSStoreKit" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSMoneyMaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
