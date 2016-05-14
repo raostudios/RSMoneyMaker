@@ -8,10 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@class Alert;
+
+extern NSString * const AlertManagerBannerDisplayedNotification;
+extern NSString * const AlertManagerBannerDismissedNotification;
+
 @interface AlertManager : NSObject
 
 +(instancetype) sharedManager;
 
--(void) showAlert:(NSString *) message withAnimation:(BOOL)animations forced:(BOOL) forced;
+-(void) scheduleAlert:(Alert *)alert;
+-(void) showNextQueuedAlert;
+-(void) viewControllerIsDissapearing;
+
 
 @end

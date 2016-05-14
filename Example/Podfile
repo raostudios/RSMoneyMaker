@@ -8,7 +8,4 @@ end
 
 target 'Tests', :exclusive => true do
   pod "RSStoreKit", :path => "../"
-
-  pod 'Specta'
-  pod 'Expecta'
 end

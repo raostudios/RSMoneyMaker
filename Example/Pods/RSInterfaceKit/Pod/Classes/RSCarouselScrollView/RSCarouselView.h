@@ -12,18 +12,30 @@
 
 @protocol RSCarouselViewDataSource <NSObject>
 
-- (NSInteger) numberOfItemsInCarouselView:(RSCarouselView *)carouselView;
-- (void) configureCell:(UICollectionViewCell *)cell InCarouselView:(RSCarouselView *)carouselView atIndex:(NSUInteger)index;
+-(NSInteger) numberOfItemsInCarouselView:(RSCarouselView *)carouselView;
+-(void) configureCell:(UICollectionViewCell *)cell InCarouselView:(RSCarouselView *)carouselView atIndex:(NSUInteger)index;
+
+@end
+
+@protocol RSCarouselViewDelegate <NSObject>
+
+-(void) carouselView:(RSCarouselView *) carouselView animationEndedOnCell:(UICollectionViewCell *)cell;
 
 @end
 
 @interface RSCarouselView : UIView
 
 @property (nonatomic, weak) id<RSCarouselViewDataSource> dataSource;
+@property (nonatomic, weak) id<RSCarouselViewDelegate> delegate;
 
-- (void)registerClass:(Class)cellClass forCellWithReuseIdentifier:(NSString *)identifier;
+@property (nonatomic, strong) NSTimer *scrollTimer;
+@property (nonatomic, assign) BOOL shouldWrapAround;
+
+
+-(void) registerClass:(Class)cellClass forCellWithReuseIdentifier:(NSString *)identifier;
 
 -(void) start;
 -(void) stop;
+
 
 @end

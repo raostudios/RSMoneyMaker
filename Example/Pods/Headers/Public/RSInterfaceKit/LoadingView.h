@@ -1,1 +1,1 @@
-../../../RSInterfaceKit/Pod/Classes/LoadingView.h
+../../../RSInterfaceKit/Pod/Classes/LoadingView/LoadingView.h

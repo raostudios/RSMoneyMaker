@@ -1,37 +1,41 @@
 PODS:
-  - Expecta (0.4.1)
-  - RSInterfaceKit (0.0.1):
-    - RSInterfaceKit/Alerts (= 0.0.1)
-    - RSInterfaceKit/AutoLayoutHelpers (= 0.0.1)
-    - RSInterfaceKit/FullScreenImageView (= 0.0.1)
-    - RSInterfaceKit/LoadingView (= 0.0.1)
-    - RSInterfaceKit/RSCarouselDissolvingImageView (= 0.0.1)
-    - RSInterfaceKit/RSCarouselScrollView (= 0.0.1)
-  - RSInterfaceKit/Alerts (0.0.1):
+  - RSInterfaceKit (0.0.35):
+    - RSInterfaceKit/Alerts (= 0.0.35)
+    - RSInterfaceKit/AutoLayoutHelpers (= 0.0.35)
+    - RSInterfaceKit/CollectionViewWithTransitions (= 0.0.35)
+    - RSInterfaceKit/FullScreenImageView (= 0.0.35)
+    - RSInterfaceKit/LoadingView (= 0.0.35)
+    - RSInterfaceKit/PortraitOnlyNavigation (= 0.0.35)
+    - RSInterfaceKit/RSCarouselDissolvingImageView (= 0.0.35)
+    - RSInterfaceKit/RSCarouselScrollView (= 0.0.35)
+    - RSInterfaceKit/RSSettings (= 0.0.35)
+    - RSInterfaceKit/ZoomableImageView (= 0.0.35)
+  - RSInterfaceKit/Alerts (0.0.35):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/AutoLayoutHelpers (0.0.1)
-  - RSInterfaceKit/FullScreenImageView (0.0.1)
-  - RSInterfaceKit/LoadingView (0.0.1):
+  - RSInterfaceKit/AutoLayoutHelpers (0.0.35)
+  - RSInterfaceKit/CollectionViewWithTransitions (0.0.35)
+  - RSInterfaceKit/FullScreenImageView (0.0.35):
+    - RSInterfaceKit/ZoomableImageView
+  - RSInterfaceKit/LoadingView (0.0.35):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/RSCarouselDissolvingImageView (0.0.1)
-  - RSInterfaceKit/RSCarouselScrollView (0.0.1)
-  - RSStoreKit (0.0.1):
+  - RSInterfaceKit/PortraitOnlyNavigation (0.0.35)
+  - RSInterfaceKit/RSCarouselDissolvingImageView (0.0.35)
+  - RSInterfaceKit/RSCarouselScrollView (0.0.35)
+  - RSInterfaceKit/RSSettings (0.0.35):
+    - RSInterfaceKit/AutoLayoutHelpers
+  - RSInterfaceKit/ZoomableImageView (0.0.35)
+  - RSStoreKit (0.0.3):
     - RSInterfaceKit
-  - Specta (0.5.0)
 
 DEPENDENCIES:
-  - Expecta
   - RSStoreKit (from `../`)
-  - Specta
 
 EXTERNAL SOURCES:
   RSStoreKit:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: a2f175f4f5f99d062d480787945ea11d8884077e
-  RSInterfaceKit: 1c1bbb2fcfe82f7754798842783d71cd6b6da6dd
-  RSStoreKit: adeeacbd07f38163ec9f4dd704643e600ae5c24c
-  Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
+  RSInterfaceKit: 69b7a890a89e95f17a8d18e557cdf53855d8370d
+  RSStoreKit: 4025a401a97b3d125c53128cbe770acc70b69426
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.39.0

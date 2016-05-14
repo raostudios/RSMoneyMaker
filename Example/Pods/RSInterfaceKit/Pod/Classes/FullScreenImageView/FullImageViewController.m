@@ -9,8 +9,9 @@
 #import "FullImageViewController.h"
 #import "FullImageView.h"
 #import "ZoomAnimator.h"
+#import "RSZoomableImageView.h"
 
-@interface FullImageViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIDocumentInteractionControllerDelegate>
+@interface FullImageViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIDocumentInteractionControllerDelegate, ZoomAnimatorDelegate>
 
 @property (strong, nonatomic) FullImageView *view;
 @property (strong, nonatomic) ZoomAnimator *zoomAnimator;
@@ -19,62 +20,85 @@
 
 @implementation FullImageViewController
 
-@synthesize view;
+@dynamic view;
 
--(instancetype)init {
-    self = [super init];
-    if (self) {
-        self.transitioningDelegate = self.zoomAnimator;
-    }
-    return self;
-}
-
--(void)loadView {
+-(void) loadView {
     self.view = [[FullImageView alloc] initWithFrame:CGRectZero];
 }
 
-- (void)viewDidLoad {
+-(void) viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self.view.buttonDone addTarget:self action:@selector(donePressed:) forControlEvents:UIControlEventTouchUpInside];
 
+    [self.view.buttonDone addTarget:self action:@selector(donePressed:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view shouldShowButtons:NO];
     
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
     [self.view addGestureRecognizer:gesture];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view.buttonDone
+                                                     attribute:NSLayoutAttributeBottom
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self.bottomLayoutGuide
+                                                     attribute:NSLayoutAttributeBottom
+                                                    multiplier:1
+                                                      constant:0]];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                 action:@selector(imageTapped:)];
+    [self.view.scrollView addGestureRecognizer:tapGesture];
 }
 
--(void)viewTapped:(UITapGestureRecognizer *)gestureRecognizer {    
-    [self.view flipWithAnimation:YES];
-}
-
--(BOOL)prefersStatusBarHidden {
+-(BOOL) prefersStatusBarHidden {
     return YES;
 }
 
-- (void)donePressed:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+-(void) viewTapped:(UITapGestureRecognizer *)gestureRecognizer {
+    [self.view flipWithAnimation:YES];
 }
 
-- (void) setImage: (UIImage *)image {
-    self.view.imageViewFull.image = image;
+-(void) imageTapped:(UITapGestureRecognizer *) gesture {
+    [self.view animateBackToOriginalWithCompletion:^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
 }
 
--(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    
-    CGRect frame = CGRectZero;
-    frame.size = size;
-    self.view.frame = frame;
-
-    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-        [self.view layoutIfNeeded];
-    } completion:nil];
+-(void) donePressed:(UIButton *)sender {
+    [self.view animateBackToOriginalWithCompletion:^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
 }
 
--(ZoomAnimator *)zoomAnimator {
+-(void) setImage: (UIImage *)image {
+    self.view.scrollView.image = image;
+}
+
+-(UIImage *)image {
+    return self.view.scrollView.image;
+}
+
+-(void)setDelegate:(id<FullImageViewControllerDelegate>)delegate {
+    _delegate = delegate;
+    self.transitioningDelegate = self.zoomAnimator;
+}
+
+-(CGRect) rectForInitialImageForView:(UIView *)view forFullImageViewController:(ZoomAnimator *)zoomAnimator {
+    return [self.delegate rectForInitialImageForView:view forFullImageViewController:self];
+}
+
+-(UIImageView *) initialImageViewForFullImageViewController:(ZoomAnimator *)zoomAnimator {
+    return [self.delegate initialImageViewForFullImageViewController:self];
+}
+
+-(UIImage *) initialImageForFullImageViewController:(ZoomAnimator *)zoomAnimator {
+    return [self.delegate initialImageForFullImageViewController:self];
+}
+
+
+-(ZoomAnimator *) zoomAnimator {
     if (!_zoomAnimator) {
         _zoomAnimator = [ZoomAnimator new];
-        _zoomAnimator.fullImageViewController = self;
+        _zoomAnimator.delegate = self;
     }
     return _zoomAnimator;
 }

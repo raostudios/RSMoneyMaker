@@ -1,6 +1,6 @@
 {
   "name": "RSStoreKit",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "RSStoreKit provides an easy a way to implement IAPs",
   "homepage": "https://github.com/raostudios/RSStoreKit",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/raostudios/RSStoreKit.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "social_media_url": "https://twitter.com/venkatrao",
   "dependencies": {
@@ -21,12 +21,12 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "Pod/Classes/*",
   "resource_bundles": {
     "RSStoreKit": [
       "Pod/Assets/*.png"
     ]
   },
-  "public_header_files": "Pod/Classes/**/*.h",
+  "public_header_files": "Pod/Classes/*.h",
   "frameworks": "StoreKit"
 }
