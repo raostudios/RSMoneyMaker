@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RSMoneyMaker"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "RSStoreKit provides an easy a way to implement IAPs"
   s.homepage         = "https://github.com/raostudios/RSStoreKit"
   s.license          = 'MIT'

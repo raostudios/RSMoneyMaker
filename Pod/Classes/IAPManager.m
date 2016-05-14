@@ -6,7 +6,7 @@
 //
 //
 
-#import <RSStoreKit/RSStoreKit.h>
+#import <RSMoneyMaker/RSMoneyMaker.h>
 
 @interface IAPManager ()<SKProductsRequestDelegate>
 
