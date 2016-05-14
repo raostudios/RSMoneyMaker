@@ -1,0 +1,1 @@
+PODS_TESTS_RSSTOREKIT_OTHER_LDFLAGS = -framework "StoreKit"

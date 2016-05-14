@@ -1,0 +1,1 @@
+../../../RSInterfaceKit/Pod/Classes/RSCarouselScrollView/RSCarouselView.h

@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/SKProduct+LocalizedPrice.h

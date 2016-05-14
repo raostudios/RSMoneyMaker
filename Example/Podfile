@@ -1,0 +1,14 @@
+platform :ios, '8.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'RSStoreKit', :exclusive => true do
+  pod "RSStoreKit", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "RSStoreKit", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

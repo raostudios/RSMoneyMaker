@@ -1,0 +1,1 @@
+../../../RSInterfaceKit/Pod/Classes/Alerts/AlertManager.h
