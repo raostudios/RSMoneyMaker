@@ -194,8 +194,7 @@ fi
 				<string>6003F590195388D20070C39A</string>
 				<string>6003F592195388D20070C39A</string>
 				<string>6003F58E195388D20070C39A</string>
-				<string>9FE78D7D76F10B905F3F21F8</string>
-				<string>9FBADEFB0717211F0E37B96C</string>
+				<string>F536B72F71F605ADAE9BF38D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -224,12 +223,12 @@ fi
 			<string>6003F5BF195388D20070C39A</string>
 			<key>buildPhases</key>
 			<array>
-				<string>E0F201457F9BB011BA741173</string>
+				<string>8887C5C21EA1245CB4EB70C2</string>
 				<string>6003F586195388D20070C39A</string>
 				<string>6003F587195388D20070C39A</string>
 				<string>6003F588195388D20070C39A</string>
-				<string>6EBB4F24ED7098DE9707A848</string>
-				<string>D28BDE96632B5A0DFB210CBF</string>
+				<string>7A7D3C72D07EAAFA8B9FD736</string>
+				<string>7E4CD06622D18E9A0847C26A</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -977,7 +976,7 @@ fi
 		<key>6003F5C0195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>8D11C2F1974ED59BC0A983E9</string>
+			<string>98DF21A550A163DEC6873621</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1007,7 +1006,7 @@ fi
 		<key>6003F5C1195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>31532E8EDFD5E05AFA9497D4</string>
+			<string>A9B21A66D40A722315D8872C</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1164,7 +1163,31 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6EBB4F24ED7098DE9707A848</key>
+		<key>7A7D3C72D07EAAFA8B9FD736</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7E4CD06622D18E9A0847C26A</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -1241,6 +1264,36 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>8887C5C21EA1245CB4EB70C2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
 		<key>8C95C2CD909DD763629A4D77</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1271,19 +1324,35 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9FBADEFB0717211F0E37B96C</key>
+		<key>98DF21A550A163DEC6873621</key>
 		<dict>
-			<key>fileRef</key>
-			<string>7F7094508A38F180D954D52A</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RSMoneyMaker.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9FE78D7D76F10B905F3F21F8</key>
+		<key>A9B21A66D40A722315D8872C</key>
 		<dict>
-			<key>fileRef</key>
-			<string>4E9FC6DDAF246665804A5254</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RSMoneyMaker.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AC3B82C84D646C28DDFA8456</key>
 		<dict>
@@ -1356,6 +1425,8 @@ fi
 				<string>31532E8EDFD5E05AFA9497D4</string>
 				<string>BA223D0FC0195F380BB5B0BB</string>
 				<string>640F8E943C4D0CA84A980A3D</string>
+				<string>A9B21A66D40A722315D8872C</string>
+				<string>98DF21A550A163DEC6873621</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1377,30 +1448,6 @@ fi
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>D28BDE96632B5A0DFB210CBF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
 		<key>DA0772217E86340089768685</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1416,35 +1463,12 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E0F201457F9BB011BA741173</key>
+		<key>F536B72F71F605ADAE9BF38D</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
+			<key>fileRef</key>
+			<string>7F7094508A38F180D954D52A</string>
 			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
+			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

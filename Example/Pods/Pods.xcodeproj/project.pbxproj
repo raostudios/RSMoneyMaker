@@ -25,20 +25,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>02081665C66AFAAB74316AAFD9A7CA44</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3657FE4DE373F6E2C0AE4D3FFD8D86D1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>02E1D6A74F728203952ECC637FEC58F5</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -60,6 +46,19 @@
 			<string>0115319C388E7F87A672B97624906B45</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>033CEEE7249E2A9797B806E85D683561</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SKProduct+LocalizedPrice.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>048019BAFB8224D5EA134731667CA863</key>
 		<dict>
@@ -164,6 +163,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>0E0071AEB7118FAD651B3A7B1747EEF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IAPViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0F0384BF07DA31E0CCB99BDF4082B0AB</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -232,7 +244,7 @@
 		<key>11B0E3A9A89FB79C64D4FBE78A7D94FA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F0591C344E49B86AA72F59F1B8F43508</string>
+			<string>CDFF27C50FE1C3C07A848E76C983F030</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -286,27 +298,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>199B128146A5381910E0BB2937A4F933</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>02081665C66AFAAB74316AAFD9A7CA44</string>
-				<string>8BBFBBB9D4CE644F1D0410A298EF0543</string>
-				<string>A02753F1084046315475BBB4AAAB5DE4</string>
-				<string>7A6B1252787A92C4ACC08ED8D6D50E20</string>
-				<string>9396B0A5342E2332BB0503B1AF51346D</string>
-				<string>37BFFAE0675B3FD269EDEC52E6DF539A</string>
-				<string>92808D619759694CACEEF225D1EFA2FA</string>
-				<string>4EE930EDA34ACB96E58B76C9F8F5EEF6</string>
-				<string>BDD5E1372CF1A8E7D72FADBDF46D8361</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
@@ -466,19 +457,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>249CF698AA26FA25FD53540AAB30E22B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IAPProduct.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>24F6ADE0E312515395479D75F4922C19</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -517,6 +495,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>25CBFBF8E3AE8F50ACFA0A4A81FD5E6E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>033CEEE7249E2A9797B806E85D683561</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>2682224BFB0C387FF8320CBAE5648704</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -529,6 +521,20 @@
 			<string>RSMoneyMaker-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>26B83D02ABE55F7CAF27814BDD30C476</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32F95FDED97ACD5C9B27DCE27360C034</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>27869F7EFFFEC97A9B7E37A5B872ABD6</key>
 		<dict>
@@ -571,16 +577,16 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>2937B87B97157B68FD1BE64DA4642F75</key>
+		<key>299D938B2786CB61DCB65EFC09F64A26</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AppReceiptManager.m</string>
+			<string>IAPProduct.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -596,19 +602,6 @@
 			<string>LoadingView.h</string>
 			<key>path</key>
 			<string>Pod/Classes/LoadingView/LoadingView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BFD8F0769C4342DCA05FFC7F71AD364</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IAPViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -687,6 +680,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>32F95FDED97ACD5C9B27DCE27360C034</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RSMoneyMaker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>351508E1F77C180FF1D2B20F03905CA0</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -715,19 +721,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>3657FE4DE373F6E2C0AE4D3FFD8D86D1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppReceiptManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3658C1F6C2FD6E93986668439E034D49</key>
 		<dict>
@@ -783,20 +776,6 @@
 			<string>Pod/Classes/RSCarouselScrollView/RSCarouselView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37BFFAE0675B3FD269EDEC52E6DF539A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8626A7841525FB4923190DA7D3FF4D7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>3B85F6E3E42AEA55F9DE99421953FA50</key>
 		<dict>
@@ -1054,19 +1033,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>490520ED4D50E7D98E396BFF1347929A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IAPManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>4B926F4159E7A90DF479A0A561F2E689</key>
 		<dict>
 			<key>fileRef</key>
@@ -1088,20 +1054,6 @@
 			<string>Pod/Classes/CollectionViewWithTransitions/CollectionViewWithTransitions.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4EE930EDA34ACB96E58B76C9F8F5EEF6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1632417D6B43B8F410B2A3AE42FE114</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>4F6D6A713CE333C4AAF66999DBD3FE22</key>
 		<dict>
@@ -1218,34 +1170,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5CD786A51585F0E60B3834E6894B629A</key>
+		<key>5C04F4AC4126BCEE55C8F4AD1D57F595</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>3657FE4DE373F6E2C0AE4D3FFD8D86D1</string>
-				<string>2937B87B97157B68FD1BE64DA4642F75</string>
-				<string>C0BC2A7E76444EC1994E0F5B69D30DC6</string>
-				<string>CC2B993401B956F265449C5BA00EC9E2</string>
-				<string>83E082E921B055FF00B5ED5CB9134817</string>
-				<string>490520ED4D50E7D98E396BFF1347929A</string>
-				<string>E78A99CAC135A33E13168A3A0F3FF217</string>
-				<string>A5AE054C73D224E1BF56BA1883FD5A08</string>
-				<string>F30D6897689BEE839E687339C4F11844</string>
-				<string>249CF698AA26FA25FD53540AAB30E22B</string>
-				<string>8626A7841525FB4923190DA7D3FF4D7C</string>
-				<string>8E080682BB6ED6E455DB1DF9B71BAD62</string>
-				<string>2BFD8F0769C4342DCA05FFC7F71AD364</string>
-				<string>E115D909472AB0BEC4A07DECD88D3088</string>
-				<string>C1632417D6B43B8F410B2A3AE42FE114</string>
-				<string>9A5D3512A4ECAC238D3F9A5157B76297</string>
-				<string>F0591C344E49B86AA72F59F1B8F43508</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Classes</string>
+			<string>IAPManager.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1377,6 +1311,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>672DD5124121DD31585BDFD4778E84A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IAPProducts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>68E5998F63F2FE75B5E3A7603238537A</key>
 		<dict>
 			<key>fileRef</key>
@@ -1488,6 +1435,20 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>7633C59AB9475194E60952C4D91E3739</key>
+		<dict>
+			<key>fileRef</key>
+			<string>672DD5124121DD31585BDFD4778E84A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>76B9110A10789874F5852FC0578F17B7</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1522,20 +1483,6 @@
 			<string>910B57902E283F798144F94FB9E12467</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>7A6B1252787A92C4ACC08ED8D6D50E20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E78A99CAC135A33E13168A3A0F3FF217</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>7A6C9BC7F80989B46AF434B945E0E498</key>
 		<dict>
@@ -1623,19 +1570,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>83E082E921B055FF00B5ED5CB9134817</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IAPManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>84F621C584C70C8E526F12EE02014C99</key>
 		<dict>
 			<key>fileRef</key>
@@ -1683,22 +1617,9 @@
 		<key>85993000FE8879C90A62A82895ED80F2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2937B87B97157B68FD1BE64DA4642F75</string>
+			<string>A91D78921758AEE09AB11CB93EAE7259</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>8626A7841525FB4923190DA7D3FF4D7C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IAPProducts.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>86FB7C414871BAE845FA063D997B9674</key>
 		<dict>
@@ -1756,20 +1677,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8BBFBBB9D4CE644F1D0410A298EF0543</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C0BC2A7E76444EC1994E0F5B69D30DC6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
 		<key>8BCFF0D656B77DC94E4B790114C1C693</key>
 		<dict>
 			<key>fileRef</key>
@@ -1795,7 +1702,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>8E080682BB6ED6E455DB1DF9B71BAD62</key>
+		<key>8E2E733892B16AAF4199678AE5F9AF13</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1804,7 +1711,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>IAPProducts.m</string>
+			<string>IAPMarketingItem.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1886,34 +1793,6 @@
 			<string>RSInterfaceKit-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92808D619759694CACEEF225D1EFA2FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2BFD8F0769C4342DCA05FFC7F71AD364</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9396B0A5342E2332BB0503B1AF51346D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F30D6897689BEE839E687339C4F11844</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>93F745CD2377F9758548BF1D3D61F515</key>
 		<dict>
@@ -2072,7 +1951,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>9A5D3512A4ECAC238D3F9A5157B76297</key>
+		<key>9DA7E0A54304D72B4C68DF10355D2C88</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2081,7 +1960,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SKProduct+LocalizedPrice.h</string>
+			<string>IAPViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2109,20 +1988,6 @@
 		<dict>
 			<key>fileRef</key>
 			<string>64A9861E2DE0AAB53644881495E28ACA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A02753F1084046315475BBB4AAAB5DE4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>83E082E921B055FF00B5ED5CB9134817</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2161,6 +2026,19 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>A1E132B12718335F8B9EE3056A6551BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IAPManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A24CC9BBA876790215585E42FB5DEAF3</key>
 		<dict>
@@ -2202,6 +2080,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>A436B670E829FF7050FE95C8CBB89304</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IAPCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A5634E239463275EB227BAAB15AB7E2E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2212,19 +2103,6 @@
 			<string>Close@3x.png</string>
 			<key>path</key>
 			<string>Pod/Assets/Alerts/Close@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5AE054C73D224E1BF56BA1883FD5A08</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IAPMarketingItem.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2351,6 +2229,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>A91D78921758AEE09AB11CB93EAE7259</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppReceiptManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A9DDD72334655C627A3C1A74D90FFF63</key>
 		<dict>
 			<key>fileRef</key>
@@ -2368,6 +2259,19 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>RSMoneyMaker-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB9667EB6085B57CF607B9D75F2CEF87</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IAPProduct.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2522,7 +2426,7 @@
 		<key>B2F2333417D4BAF6E08F0B132AC328E8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>490520ED4D50E7D98E396BFF1347929A</string>
+			<string>5C04F4AC4126BCEE55C8F4AD1D57F595</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2578,9 +2482,30 @@
 		<key>B3B7E4E360E89473C065B887DAE6F12C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>CC2B993401B956F265449C5BA00EC9E2</string>
+			<string>EC81C7548DC5CE66C93AA8F984525BDF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>B48C6AE78826EEF30C1D69D04607AC3B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DBC8B6592ECA141DBBBD6B7F8CF4BB8A</string>
+				<string>D24F7E93C390D0E9F0720177A28EFF78</string>
+				<string>DF9CA0E3F48840F75747217D25A78BB8</string>
+				<string>DF6E2D9C2F5781675BD0974784FE7B29</string>
+				<string>B6BE8B01B88127C3F53FA5EF7268B052</string>
+				<string>7633C59AB9475194E60952C4D91E3739</string>
+				<string>C9EF6972F8EEB1446A4F182BC88B6E85</string>
+				<string>26B83D02ABE55F7CAF27814BDD30C476</string>
+				<string>25CBFBF8E3AE8F50ACFA0A4A81FD5E6E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>B5E4369DF3526D8F7F10BAEF133AD8D6</key>
 		<dict>
@@ -2598,6 +2523,20 @@
 			<string>../Target Support Files/RSInterfaceKit</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6BE8B01B88127C3F53FA5EF7268B052</key>
+		<dict>
+			<key>fileRef</key>
+			<string>299D938B2786CB61DCB65EFC09F64A26</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>B71E11D12DF61FAC0C215A9F6842E5F2</key>
 		<dict>
@@ -2699,26 +2638,25 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>BCC556124AD8A1E71AC42401E3B50704</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IAPMarketingItem.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BD5B5192663AD22575E96363BB36C3C1</key>
 		<dict>
 			<key>fileRef</key>
 			<string>5E71B069FC92D50722B725516211F49D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>BDD5E1372CF1A8E7D72FADBDF46D8361</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A5D3512A4ECAC238D3F9A5157B76297</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>BE596B1DD46F456FC6E4C74E694D23A3</key>
 		<dict>
@@ -2748,32 +2686,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>C0BC2A7E76444EC1994E0F5B69D30DC6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IAPCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1632417D6B43B8F410B2A3AE42FE114</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RSStoreKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C201F992A67E89164A3ADDACFAF35850</key>
 		<dict>
@@ -2825,7 +2737,7 @@
 		<key>C71F875CC1B7840D60BC7C9997312BED</key>
 		<dict>
 			<key>fileRef</key>
-			<string>249CF698AA26FA25FD53540AAB30E22B</string>
+			<string>AB9667EB6085B57CF607B9D75F2CEF87</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2924,6 +2836,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C9EF6972F8EEB1446A4F182BC88B6E85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9DA7E0A54304D72B4C68DF10355D2C88</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>CB711ECA9A3F70AF661A3BAB3161D5BA</key>
 		<dict>
 			<key>fileRef</key>
@@ -2931,7 +2857,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>CC2B993401B956F265449C5BA00EC9E2</key>
+		<key>CDFF27C50FE1C3C07A848E76C983F030</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2940,7 +2866,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>IAPCell.m</string>
+			<string>SKProduct+LocalizedPrice.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3041,6 +2967,20 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>D24F7E93C390D0E9F0720177A28EFF78</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A436B670E829FF7050FE95C8CBB89304</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>D2841E01C0C7FE46611C575C86192853</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -3124,7 +3064,7 @@
 		<key>D5BF9A7B5485387000E1DED9C72F6AFE</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8E080682BB6ED6E455DB1DF9B71BAD62</string>
+			<string>EF5FA796C8F419DFFB4DBEA5C284512F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3204,14 +3144,56 @@
 		<key>DA30B667518AADD636C7339DD613F46B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A5AE054C73D224E1BF56BA1883FD5A08</string>
+			<string>8E2E733892B16AAF4199678AE5F9AF13</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>DBC8B6592ECA141DBBBD6B7F8CF4BB8A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7254BA9DF188CD2CA2159BF7E61FD27</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>DE5B8FE1EBC6EB9921ECCF290DC529FD</key>
 		<dict>
 			<key>fileRef</key>
 			<string>29D778E01A0C3906EF2434D355F6A90D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DF6E2D9C2F5781675BD0974784FE7B29</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BCC556124AD8A1E71AC42401E3B50704</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DF9CA0E3F48840F75747217D25A78BB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A1E132B12718335F8B9EE3056A6551BB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3263,19 +3245,6 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
-		</dict>
-		<key>E115D909472AB0BEC4A07DECD88D3088</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>IAPViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E1E05D1EDBF9D09F751D264901CAA7B4</key>
 		<dict>
@@ -3339,16 +3308,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E78A99CAC135A33E13168A3A0F3FF217</key>
+		<key>EC81C7548DC5CE66C93AA8F984525BDF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>IAPMarketingItem.h</string>
+			<string>IAPCell.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3375,7 +3344,7 @@
 			<array>
 				<string>7D0D3CB780D6E993D75BE1A81B9B82B4</string>
 				<string>1E47CC9E7DD917241465DC25652F212C</string>
-				<string>199B128146A5381910E0BB2937A4F933</string>
+				<string>B48C6AE78826EEF30C1D69D04607AC3B</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -3435,6 +3404,50 @@
 				</array>
 			</dict>
 		</dict>
+		<key>EF36420EDFE5690D19508FF2CF81AB3B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7254BA9DF188CD2CA2159BF7E61FD27</string>
+				<string>A91D78921758AEE09AB11CB93EAE7259</string>
+				<string>A436B670E829FF7050FE95C8CBB89304</string>
+				<string>EC81C7548DC5CE66C93AA8F984525BDF</string>
+				<string>A1E132B12718335F8B9EE3056A6551BB</string>
+				<string>5C04F4AC4126BCEE55C8F4AD1D57F595</string>
+				<string>BCC556124AD8A1E71AC42401E3B50704</string>
+				<string>8E2E733892B16AAF4199678AE5F9AF13</string>
+				<string>299D938B2786CB61DCB65EFC09F64A26</string>
+				<string>AB9667EB6085B57CF607B9D75F2CEF87</string>
+				<string>672DD5124121DD31585BDFD4778E84A1</string>
+				<string>EF5FA796C8F419DFFB4DBEA5C284512F</string>
+				<string>9DA7E0A54304D72B4C68DF10355D2C88</string>
+				<string>0E0071AEB7118FAD651B3A7B1747EEF2</string>
+				<string>32F95FDED97ACD5C9B27DCE27360C034</string>
+				<string>033CEEE7249E2A9797B806E85D683561</string>
+				<string>CDFF27C50FE1C3C07A848E76C983F030</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF5FA796C8F419DFFB4DBEA5C284512F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IAPProducts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>EFB0712FCC2EABE8D0358D02C68F3B8F</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -3456,32 +3469,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>F0591C344E49B86AA72F59F1B8F43508</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SKProduct+LocalizedPrice.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F30D6897689BEE839E687339C4F11844</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>IAPProduct.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F35343815B883C6B2166AF654141CB56</key>
 		<dict>
@@ -3530,6 +3517,19 @@
 			<string>1BBE2E4AA4039928D2DE412CC9C7E3F6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7254BA9DF188CD2CA2159BF7E61FD27</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppReceiptManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F8324EFA78A7D02234E54170434DCB56</key>
 		<dict>
@@ -3699,7 +3699,7 @@
 		<key>FBD00A42BBB5398093FF44E901084ABC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E115D909472AB0BEC4A07DECD88D3088</string>
+			<string>0E0071AEB7118FAD651B3A7B1747EEF2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3720,7 +3720,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>5CD786A51585F0E60B3834E6894B629A</string>
+				<string>EF36420EDFE5690D19508FF2CF81AB3B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
