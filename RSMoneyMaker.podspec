@@ -4,6 +4,7 @@
 #
 
 Pod::Spec.new do |s|
+
 s.name             = "RSMoneyMaker"
 s.version          = "0.0.5"
 s.summary          = "RSMoneyMaker provides an easy a way to implement IAPs"
@@ -21,5 +22,6 @@ s.resource_bundles = {
 'RSMoneyMaker' => ['Pod/Assets/*.png']
 }
 s.public_header_files = 'Pod/Classes/*.h'
-s.frameworks = 'RSMoneyMaker'
+s.frameworks = 'UIKit'
+
 end

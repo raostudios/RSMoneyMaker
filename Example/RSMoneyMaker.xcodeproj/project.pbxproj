@@ -11,21 +11,19 @@
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* RSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RSAppDelegate.m */; };
-		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
-		6003F5A7195388D20070C39A /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RSViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		820369D51AEB28F600432752 /* IAPManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820369D41AEB28F600432752 /* IAPManagerTests.m */; };
 		820369D71AEB2F9D00432752 /* AppReceiptManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820369D61AEB2F9D00432752 /* AppReceiptManagerTests.m */; };
-		826EB76A1CE8122000038E05 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826EB7691CE8122000038E05 /* Launch Screen.storyboard */; };
-		F536B72F71F605ADAE9BF38D /* libPods-RSMoneyMaker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7094508A38F180D954D52A /* libPods-RSMoneyMaker.a */; };
+		8247F5001CE829FF009EF643 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8247F4F91CE82946009EF643 /* Main_iPad.storyboard */; };
+		8247F5011CE82A08009EF643 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8247F4FB1CE82946009EF643 /* Main_iPhone.storyboard */; };
+		82D158501CE825BB0001415E /* RSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1584F1CE825BB0001415E /* RSAppDelegate.m */; };
+		82D158521CE825C70001415E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D158511CE825C70001415E /* Images.xcassets */; };
+		82D158551CE825D80001415E /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D158541CE825D80001415E /* RSViewController.m */; };
+		82D1585A1CE826060001415E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D158591CE826060001415E /* main.m */; };
+		82D1585C1CE8260D0001415E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D1585B1CE8260D0001415E /* Launch Screen.storyboard */; };
+		A47C814CFE7F624648EEEB8F /* libPods-RSMoneyMaker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7094508A38F180D954D52A /* libPods-RSMoneyMaker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,17 +44,6 @@
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* RSMoneyMaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSMoneyMaker-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* RSMoneyMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSMoneyMaker-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* RSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* RSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* RSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -66,7 +53,18 @@
 		7F7094508A38F180D954D52A /* libPods-RSMoneyMaker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSMoneyMaker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		820369D41AEB28F600432752 /* IAPManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPManagerTests.m; sourceTree = "<group>"; };
 		820369D61AEB2F9D00432752 /* AppReceiptManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppReceiptManagerTests.m; sourceTree = "<group>"; };
-		826EB7691CE8122000038E05 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8247F4F71CE8292E009EF643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = RSMoneyMaker/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		8247F4FA1CE82946009EF643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RSMoneyMaker/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
+		8247F4FC1CE82946009EF643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RSMoneyMaker/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		82D1584E1CE825BB0001415E /* RSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSAppDelegate.h; path = RSMoneyMaker/RSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		82D1584F1CE825BB0001415E /* RSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSAppDelegate.m; path = RSMoneyMaker/RSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		82D158511CE825C70001415E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RSMoneyMaker/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		82D158531CE825D80001415E /* RSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSViewController.h; path = RSMoneyMaker/RSViewController.h; sourceTree = SOURCE_ROOT; };
+		82D158541CE825D80001415E /* RSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSViewController.m; path = RSMoneyMaker/RSViewController.m; sourceTree = SOURCE_ROOT; };
+		82D158561CE825F10001415E /* RSMoneyMaker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RSMoneyMaker-Info.plist"; path = "RSMoneyMaker/RSMoneyMaker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		82D158581CE825F90001415E /* RSMoneyMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "RSMoneyMaker-Prefix.pch"; path = "RSMoneyMaker/RSMoneyMaker-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		82D158591CE826060001415E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RSMoneyMaker/main.m; sourceTree = SOURCE_ROOT; };
+		82D1585B1CE8260D0001415E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "RSMoneyMaker/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		8C95C2CD909DD763629A4D77 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8D11C2F1974ED59BC0A983E9 /* Pods-RSStoreKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStoreKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSStoreKit/Pods-RSStoreKit.debug.xcconfig"; sourceTree = "<group>"; };
 		98DF21A550A163DEC6873621 /* Pods-RSMoneyMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSMoneyMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +82,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F536B72F71F605ADAE9BF38D /* libPods-RSMoneyMaker.a in Frameworks */,
+				A47C814CFE7F624648EEEB8F /* libPods-RSMoneyMaker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,13 +138,13 @@
 		6003F593195388D20070C39A /* RSMoneyMaker */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* RSAppDelegate.h */,
-				6003F59D195388D20070C39A /* RSAppDelegate.m */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
-				6003F5A5195388D20070C39A /* RSViewController.h */,
-				6003F5A6195388D20070C39A /* RSViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				82D1584E1CE825BB0001415E /* RSAppDelegate.h */,
+				82D1584F1CE825BB0001415E /* RSAppDelegate.m */,
+				82D158531CE825D80001415E /* RSViewController.h */,
+				82D158541CE825D80001415E /* RSViewController.m */,
+				8247F4F91CE82946009EF643 /* Main_iPad.storyboard */,
+				8247F4FB1CE82946009EF643 /* Main_iPhone.storyboard */,
+				82D158511CE825C70001415E /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = RSMoneyMaker;
@@ -156,11 +154,11 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* RSMoneyMaker-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* RSMoneyMaker-Prefix.pch */,
-				826EB7691CE8122000038E05 /* Launch Screen.storyboard */,
+				82D158561CE825F10001415E /* RSMoneyMaker-Info.plist */,
+				82D158591CE826060001415E /* main.m */,
+				8247F4F61CE8292E009EF643 /* InfoPlist.strings */,
+				82D158581CE825F90001415E /* RSMoneyMaker-Prefix.pch */,
+				82D1585B1CE8260D0001415E /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,10 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RSMoneyMaker" */;
 			buildPhases = (
+				DBB08D6B4A4F2962304A605B /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7E9E33A783C350A798F7D949 /* Embed Pods Frameworks */,
+				E46FE6A19D9F502D14878A7C /* Embed Pods Frameworks */,
+				CF1D0E932EE959C6B49485EC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,11 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
-				826EB76A1CE8122000038E05 /* Launch Screen.storyboard in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8247F5011CE82A08009EF643 /* Main_iPhone.storyboard in Resources */,
+				8247F5001CE829FF009EF643 /* Main_iPad.storyboard in Resources */,
+				82D158521CE825C70001415E /* Images.xcassets in Resources */,
+				82D1585C1CE8260D0001415E /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,21 +319,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7E9E33A783C350A798F7D949 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC3B82C84D646C28DDFA8456 /* Copy Pods Resources */ = {
@@ -368,6 +351,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CF1D0E932EE959C6B49485EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB08D6B4A4F2962304A605B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E46FE6A19D9F502D14878A7C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -375,9 +403,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* RSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* RSViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				82D158551CE825D80001415E /* RSViewController.m in Sources */,
+				82D158501CE825BB0001415E /* RSAppDelegate.m in Sources */,
+				82D1585A1CE826060001415E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,36 +429,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F597195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A0195388D20070C39A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8247F4F61CE8292E009EF643 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8247F4F71CE8292E009EF643 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8247F4F91CE82946009EF643 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8247F4FA1CE82946009EF643 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8247F4FB1CE82946009EF643 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8247F4FC1CE82946009EF643 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -517,9 +545,9 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RSStoreKit/RSMoneyMaker-Prefix.pch";
+				GCC_PREFIX_HEADER = "RSMoneyMaker/RSMoneyMaker-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
-				INFOPLIST_FILE = "RSStoreKit/RSMoneyMaker-Info.plist";
+				INFOPLIST_FILE = "RSMoneyMaker/RSMoneyMaker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RSMoneyMaker;
@@ -536,9 +564,9 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RSStoreKit/RSMoneyMaker-Prefix.pch";
+				GCC_PREFIX_HEADER = "RSMoneyMaker/RSMoneyMaker-Prefix.pch";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = NO;
-				INFOPLIST_FILE = "RSStoreKit/RSMoneyMaker-Info.plist";
+				INFOPLIST_FILE = "RSMoneyMaker/RSMoneyMaker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RSMoneyMaker;

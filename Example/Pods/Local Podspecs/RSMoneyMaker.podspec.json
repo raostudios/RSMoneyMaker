@@ -28,5 +28,5 @@
     ]
   },
   "public_header_files": "Pod/Classes/*.h",
-  "frameworks": "RSMoneyMaker"
+  "frameworks": "UIKit"
 }
