@@ -1,9 +1,9 @@
-# RSStoreKit
+# RSMoneyMaker
 
 [![CI Status](https://travis-ci.org/raostudios/RSMoneyMaker.svg?branch=master)](https://travis-ci.org/raostudios/RSMoneyMaker)
-[![Version](https://img.shields.io/cocoapods/v/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSStoreKit)
-[![License](https://img.shields.io/cocoapods/l/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSStoreKit)
-[![Platform](https://img.shields.io/cocoapods/p/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSStoreKit)
+[![Version](https://img.shields.io/cocoapods/v/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSMoneyMaker)
+[![License](https://img.shields.io/cocoapods/l/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSMoneyMaker)
+[![Platform](https://img.shields.io/cocoapods/p/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSMoneyMaker)
 
 ## Usage
 
@@ -13,7 +13,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-RSStoreKit is available through [CocoaPods](http://cocoapods.org). To install
+RSMoneyMaker is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
