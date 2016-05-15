@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/IAPManager.h
+../../../../../Pod/Classes/Core/IAPManager.h

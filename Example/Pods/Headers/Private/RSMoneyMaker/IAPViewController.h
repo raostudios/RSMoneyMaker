@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/IAPViewController.h
+../../../../../Pod/Classes/UI/IAPViewController.h

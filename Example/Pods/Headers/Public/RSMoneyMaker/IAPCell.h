@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/IAPCell.h
+../../../../../Pod/Classes/UI/IAPCell.h

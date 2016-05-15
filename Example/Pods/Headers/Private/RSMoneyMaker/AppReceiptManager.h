@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/AppReceiptManager.h
+../../../../../Pod/Classes/Core/AppReceiptManager.h

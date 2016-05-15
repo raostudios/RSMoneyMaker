@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/IAPMarketingItem.h
+../../../../../Pod/Classes/Core/IAPMarketingItem.h

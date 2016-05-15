@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/SKProduct+LocalizedPrice.h
+../../../../../Pod/Classes/Core/SKProduct+LocalizedPrice.h

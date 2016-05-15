@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/IAPProduct.h
+../../../../../Pod/Classes/Core/IAPProduct.h

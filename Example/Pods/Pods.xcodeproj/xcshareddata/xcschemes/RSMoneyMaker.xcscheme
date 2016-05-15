@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '81C84E880567B567369C443C'
+               BlueprintIdentifier = 'C90862BD4B3A57F883C3079B'
                BlueprintName = 'RSMoneyMaker'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libRSMoneyMaker.a'>
