@@ -31,9 +31,9 @@ pod "RSMoneyMaker"
 
 ``` 
 IAPManager *manager = [IAPManager sharedManager];
-    [manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct withCompletion:^(NSError *error) {
-      ...
-    }];
+[manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct withCompletion:^(NSError *error) {
+ ...
+}];
 ```
 
 ## Author
