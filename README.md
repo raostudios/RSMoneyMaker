@@ -20,6 +20,9 @@ it, simply add the following line to your Podfile:
 pod "RSMoneyMaker"
 ```
 
+## Usage
+
+
 ## Author
 
 Venkat S. Rao, vrao423@gmail.com
