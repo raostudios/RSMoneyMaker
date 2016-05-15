@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSMoneyMaker)
 [![Platform](https://img.shields.io/cocoapods/p/RSMoneyMaker.svg?style=flat)](http://cocoapods.org/pods/RSMoneyMaker)
 
-## Usage
+## Features
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Components
+RSMoneyMaker-Core -
+RSMoneyMaker-UI - 
 
 ## Requirements
+
+This project has only been tested on iOS.
 
 ## Installation
 
@@ -20,9 +24,27 @@ it, simply add the following line to your Podfile:
 pod "RSMoneyMaker"
 ```
 
+## Usage
+
+### Initialize
+
+```objective-c
+[IAPManager initializeStoreWithProducts:@[weatherProduct] withSharedSecret:@"..."];
+```
+### Make Purchase
+
+```objective-c 
+IAPManager *manager = [IAPManager sharedManager];
+[manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct withCompletion:^(NSError *error) {
+ ...
+}];
+```
+
+### UI Components
+
 ## Author
 
-Venkat S. Rao, vrao423@gmail.com
+Venkat S. Rao, venkat@raostudios.com
 
 ## License
 
