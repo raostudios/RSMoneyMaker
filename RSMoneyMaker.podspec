@@ -21,5 +21,5 @@ s.resource_bundles = {
 'RSMoneyMaker' => ['Pod/Assets/*.png']
 }
 s.public_header_files = 'Pod/Classes/*.h'
-s.frameworks = 'RSMoneyMaker'
+s.frameworks = 'MoneyMaker'
 end
