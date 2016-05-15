@@ -62,14 +62,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "RSInterfaceKit/Pod/Assets/Alerts/Close@2x.png"
   install_resource "RSInterfaceKit/Pod/Assets/Alerts/Close@3x.png"
   install_resource "${BUILT_PRODUCTS_DIR}/RSInterfaceKit.bundle"
-  install_resource "${BUILT_PRODUCTS_DIR}/RSStoreKit.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/RSMoneyMaker.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "RSInterfaceKit/Pod/Assets/Alerts/Close.png"
   install_resource "RSInterfaceKit/Pod/Assets/Alerts/Close@2x.png"
   install_resource "RSInterfaceKit/Pod/Assets/Alerts/Close@3x.png"
   install_resource "${BUILT_PRODUCTS_DIR}/RSInterfaceKit.bundle"
-  install_resource "${BUILT_PRODUCTS_DIR}/RSStoreKit.bundle"
+  install_resource "${BUILT_PRODUCTS_DIR}/RSMoneyMaker.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -1,15 +1,15 @@
 {
   "name": "RSMoneyMaker",
-  "version": "0.0.4",
-  "summary": "RSStoreKit provides an easy a way to implement IAPs",
-  "homepage": "https://github.com/raostudios/RSStoreKit",
+  "version": "0.0.5",
+  "summary": "RSMoneyMaker provides an easy a way to implement IAPs",
+  "homepage": "https://github.com/raostudios/RSMoneyMaker",
   "license": "MIT",
   "authors": {
     "Venkat S. Rao": "vrao423@gmail.com"
   },
   "source": {
-    "git": "https://github.com/raostudios/RSStoreKit.git",
-    "tag": "0.0.4"
+    "git": "https://github.com/raostudios/RSMoneyMaker.git",
+    "tag": "0.0.5"
   },
   "social_media_url": "https://twitter.com/venkatrao",
   "dependencies": {
@@ -23,10 +23,10 @@
   "requires_arc": true,
   "source_files": "Pod/Classes/*",
   "resource_bundles": {
-    "RSStoreKit": [
+    "RSMoneyMaker": [
       "Pod/Assets/*.png"
     ]
   },
   "public_header_files": "Pod/Classes/*.h",
-  "frameworks": "StoreKit"
+  "frameworks": "RSMoneyMaker"
 }

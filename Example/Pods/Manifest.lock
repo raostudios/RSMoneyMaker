@@ -24,7 +24,7 @@ PODS:
   - RSInterfaceKit/RSSettings (0.0.35):
     - RSInterfaceKit/AutoLayoutHelpers
   - RSInterfaceKit/ZoomableImageView (0.0.35)
-  - RSMoneyMaker (0.0.4):
+  - RSMoneyMaker (0.0.5):
     - RSInterfaceKit
 
 DEPENDENCIES:
@@ -36,6 +36,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   RSInterfaceKit: 69b7a890a89e95f17a8d18e557cdf53855d8370d
-  RSMoneyMaker: f2063985c6a8d0b347b66ea533df2e24e7912d39
+  RSMoneyMaker: ac67483b82a6c9b3df8d67f00166b72ba5cef7bf
 
 COCOAPODS: 0.39.0

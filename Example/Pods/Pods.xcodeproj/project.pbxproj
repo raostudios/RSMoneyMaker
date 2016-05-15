@@ -159,7 +159,7 @@
 		<key>0DFBB126C1D47428FC9FF618D60A3D67</key>
 		<dict>
 			<key>fileRef</key>
-			<string>28BB94F569CDD92B189C073819DA1992</string>
+			<string>8B316550CD0A4D02AA3CBE877F49AC42</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -252,7 +252,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>93F745CD2377F9758548BF1D3D61F515</string>
+				<string>EE9281D3C128563DE78D61E517DB2788</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -382,20 +382,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1E47CC9E7DD917241465DC25652F212C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4B926F4159E7A90DF479A0A561F2E689</string>
-				<string>BD5B5192663AD22575E96363BB36C3C1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>1F13872135AE06D890BF9A32135F6DCF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -446,16 +432,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>20A91670789030CDCD27791B103E9179</key>
+		<key>22E11ED46FF1BB3F4431738A9F818CF4</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3738623F48596EAB9BB3B3C74060F845</string>
+			<key>remoteInfo</key>
+			<string>RSMoneyMaker-RSMoneyMaker</string>
 		</dict>
 		<key>24F6ADE0E312515395479D75F4922C19</key>
 		<dict>
@@ -480,11 +468,22 @@
 			<key>productName</key>
 			<string>Pods-Tests</string>
 			<key>productReference</key>
-			<string>AF7A8744AD9FC1AEBB3EBA7ED73964A0</string>
+			<string>93206DED99DA1F6A76782CF60F7D3D7D</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>2552C094DA8B8107E5DD95A7ACE7AAF1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>256BCA25B2EA06094EE8C755B2D38AD5</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -536,19 +535,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>27869F7EFFFEC97A9B7E37A5B872ABD6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>3658C1F6C2FD6E93986668439E034D49</string>
-			<key>remoteInfo</key>
-			<string>RSMoneyMaker-RSStoreKit</string>
-		</dict>
 		<key>28591D4D1AABD78C73D7877E9BB8E273</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -563,19 +549,6 @@
 			<string>Pod/Classes/FullScreenImageView/ZoomAnimator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>28BB94F569CDD92B189C073819DA1992</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>299D938B2786CB61DCB65EFC09F64A26</key>
 		<dict>
@@ -604,17 +577,6 @@
 			<string>Pod/Classes/LoadingView/LoadingView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D5881989E7D50C5DEAFF77BC4898095</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>2D5CA615E294414A06AC8AC5BED5AF65</key>
 		<dict>
@@ -722,15 +684,15 @@
 				</array>
 			</dict>
 		</dict>
-		<key>3658C1F6C2FD6E93986668439E034D49</key>
+		<key>3738623F48596EAB9BB3B3C74060F845</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>F91D3B858B477309160C3BBB60EC26A5</string>
+			<string>D34B298596207C2C97104EF5736A7E85</string>
 			<key>buildPhases</key>
 			<array>
-				<string>20A91670789030CDCD27791B103E9179</string>
-				<string>2D5881989E7D50C5DEAFF77BC4898095</string>
-				<string>5D6757BDDF3CA6400875E4F34981C8BC</string>
+				<string>EFD14CE10DCBB31014410274D6B54E97</string>
+				<string>256BCA25B2EA06094EE8C755B2D38AD5</string>
+				<string>F546E36C073CA1E97D99C67662A19158</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -739,28 +701,13 @@
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>RSMoneyMaker-RSStoreKit</string>
+			<string>RSMoneyMaker-RSMoneyMaker</string>
 			<key>productName</key>
-			<string>RSMoneyMaker-RSStoreKit</string>
+			<string>RSMoneyMaker-RSMoneyMaker</string>
 			<key>productReference</key>
-			<string>73F8278E9917CCB51399962C368F44D0</string>
+			<string>A72E79DB16593CF353562CCCDC8BD321</string>
 			<key>productType</key>
 			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>36B06D1ECEF9F205540C24403E646B49</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>RSInterfaceKit.bundle</string>
-			<key>path</key>
-			<string>RSInterfaceKit.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>37463E3F9138B5D07FA4E37C14EFBCBD</key>
 		<dict>
@@ -987,7 +934,7 @@
 			<key>productName</key>
 			<string>Pods-RSMoneyMaker</string>
 			<key>productReference</key>
-			<string>CE9CD4DF0DD6F9BED92AC8CF3380599A</string>
+			<string>F6B4720FE7F2CECE068F7920CED4ECE4</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -1032,13 +979,6 @@
 			<string>Pods-Tests-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B926F4159E7A90DF479A0A561F2E689</key>
-		<dict>
-			<key>fileRef</key>
-			<string>28BB94F569CDD92B189C073819DA1992</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>4C5D9DCDC7F1C12B690797F37360671A</key>
 		<dict>
@@ -1134,6 +1074,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>540CD90AF56B14D7335264D4C5A7EC40</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>RSMoneyMaker.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/RSMoneyMaker.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
 		<key>54E313634A182FA7CB1146387EE99305</key>
 		<dict>
 			<key>children</key>
@@ -1154,6 +1107,27 @@
 			<string>BE596B1DD46F456FC6E4C74E694D23A3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>587C62B02AB2E4A8B7851135C82FB3DF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B316550CD0A4D02AA3CBE877F49AC42</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>598E7922028A5372F62F2959F080D4F7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>587C62B02AB2E4A8B7851135C82FB3DF</string>
+				<string>FB22DD04B4CCD58D8B417DF0A453D007</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>5BC9175B26C65D2E2589785F841E1009</key>
 		<dict>
@@ -1183,17 +1157,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5D6757BDDF3CA6400875E4F34981C8BC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>5DA0EE3A0EE1C8FB05FA35E291232D84</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1206,19 +1169,6 @@
 			<string>RSInterfaceKit-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5E71B069FC92D50722B725516211F49D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>StoreKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/StoreKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>60FF652B1A1765053E19D0725518784C</key>
 		<dict>
@@ -1233,19 +1183,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>62826620192A8E660FA0E11C884ACC08</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>62AE8E3FC3655647B7B1FBF154A44E35</key>
 		<dict>
@@ -1420,21 +1357,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>73F8278E9917CCB51399962C368F44D0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>RSStoreKit.bundle</string>
-			<key>path</key>
-			<string>RSStoreKit.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>7633C59AB9475194E60952C4D91E3739</key>
 		<dict>
 			<key>fileRef</key>
@@ -1541,7 +1463,7 @@
 				<string>89C0F556AAD4BD8995865538E2F96638</string>
 				<string>122DA2E5084A4393C29BE363C764795C</string>
 				<string>E0457993DE02D2A9F3106FE619872647</string>
-				<string>C8334134ACA89F19A326D19240A2791A</string>
+				<string>D25FFF0DE779B524F041896FEEA73F71</string>
 				<string>3FD0CE4AAB7EBA7123537DE8F48E8AFE</string>
 			</array>
 			<key>isa</key>
@@ -1569,6 +1491,21 @@
 			<string>1C87F7B28F24812A2E8A89A6F3CE5F2A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>816A81E8C417E45C4B08626CDA047403</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libRSInterfaceKit.a</string>
+			<key>path</key>
+			<string>libRSInterfaceKit.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>84F621C584C70C8E526F12EE02014C99</key>
 		<dict>
@@ -1676,6 +1613,19 @@
 			<string>Pod/Classes/RSSettings/SettingsActionGenerator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B316550CD0A4D02AA3CBE877F49AC42</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>8BCFF0D656B77DC94E4B790114C1C693</key>
 		<dict>
@@ -1794,20 +1744,42 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>93F745CD2377F9758548BF1D3D61F515</key>
+		<key>91D353C0039BFC66DC482C3C43239133</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>28BB94F569CDD92B189C073819DA1992</string>
-				<string>5E71B069FC92D50722B725516211F49D</string>
-				<string>62826620192A8E660FA0E11C884ACC08</string>
-			</array>
+			<key>baseConfigurationReference</key>
+			<string>17CDD197E0F7D5C52F7C2BA853E19537</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>RSMoneyMaker</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>iOS</string>
+			<string>Release</string>
+		</dict>
+		<key>93206DED99DA1F6A76782CF60F7D3D7D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-Tests.a</string>
+			<key>path</key>
+			<string>libPods-Tests.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>949A0E0C8D76AA2F24C41F411C56E375</key>
 		<dict>
@@ -1905,7 +1877,7 @@
 			<key>productName</key>
 			<string>RSInterfaceKit-RSInterfaceKit</string>
 			<key>productReference</key>
-			<string>36B06D1ECEF9F205540C24403E646B49</string>
+			<string>C305F002D672842DE7FCE196ABD1450E</string>
 			<key>productType</key>
 			<string>com.apple.product-type.bundle</string>
 		</dict>
@@ -1950,6 +1922,28 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>9AB10413E687909177A8486404844C26</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>17CDD197E0F7D5C52F7C2BA853E19537</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>RSMoneyMaker</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>9DA7E0A54304D72B4C68DF10355D2C88</key>
 		<dict>
@@ -2040,28 +2034,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A24CC9BBA876790215585E42FB5DEAF3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>17CDD197E0F7D5C52F7C2BA853E19537</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>RSStoreKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>A275234773B10164D15E0BEF2A087D92</key>
 		<dict>
 			<key>isa</key>
@@ -2092,6 +2064,21 @@
 			<string>IAPCell.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A45A331CB817E33C156B9DC1462B80BF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libRSMoneyMaker.a</string>
+			<key>path</key>
+			<string>libRSMoneyMaker.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>A5634E239463275EB227BAAB15AB7E2E</key>
 		<dict>
@@ -2207,6 +2194,21 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>A72E79DB16593CF353562CCCDC8BD321</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RSMoneyMaker.bundle</string>
+			<key>path</key>
+			<string>RSMoneyMaker.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>A7D72FF4B6E9DBDDBCDE4D405E239947</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2225,7 +2227,7 @@
 		<key>A8056A6E7698867A0472D93ED2223A2C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>28BB94F569CDD92B189C073819DA1992</string>
+			<string>8B316550CD0A4D02AA3CBE877F49AC42</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2332,21 +2334,6 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
-		</dict>
-		<key>AF7A8744AD9FC1AEBB3EBA7ED73964A0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-Tests.a</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>AFC035955FEBDE12FA330DACC8A62C4F</key>
 		<dict>
@@ -2587,7 +2574,7 @@
 		<key>BAC163293610313D16CD188D862C54EC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>62826620192A8E660FA0E11C884ACC08</string>
+			<string>EF08C08BE9688498E15C05FCC57A6CB4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2651,13 +2638,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD5B5192663AD22575E96363BB36C3C1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5E71B069FC92D50722B725516211F49D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>BE596B1DD46F456FC6E4C74E694D23A3</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2697,6 +2677,21 @@
 			<string>FB34B160C12325AF10DF86549782C00D</string>
 			<key>targetProxy</key>
 			<string>AFC035955FEBDE12FA330DACC8A62C4F</string>
+		</dict>
+		<key>C305F002D672842DE7FCE196ABD1450E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RSInterfaceKit.bundle</string>
+			<key>path</key>
+			<string>RSInterfaceKit.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>C341755A54D2EDB6EB894D59F9B239A3</key>
 		<dict>
@@ -2790,24 +2785,6 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>C8334134ACA89F19A326D19240A2791A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CE9CD4DF0DD6F9BED92AC8CF3380599A</string>
-				<string>AF7A8744AD9FC1AEBB3EBA7ED73964A0</string>
-				<string>FBC76570324E8B75B1F8146C6263CEBA</string>
-				<string>D865EC552A6621E9EA294D187D4F1F4D</string>
-				<string>36B06D1ECEF9F205540C24403E646B49</string>
-				<string>73F8278E9917CCB51399962C368F44D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C87E8C67A52E5A5AAAC478DBE4078944</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2870,21 +2847,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CE9CD4DF0DD6F9BED92AC8CF3380599A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-RSMoneyMaker.a</string>
-			<key>path</key>
-			<string>libPods-RSMoneyMaker.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>CF5C7A50ECE29491964043D207C02329</key>
 		<dict>
 			<key>fileRef</key>
@@ -2945,27 +2907,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D10B975FE912BC465B2C5C72845DA9FE</key>
+		<key>D1453AF2DDF5E51BB47510555339A159</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>17CDD197E0F7D5C52F7C2BA853E19537</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>RSStoreKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXTargetDependency</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>RSMoneyMaker-RSMoneyMaker</string>
+			<key>target</key>
+			<string>3738623F48596EAB9BB3B3C74060F845</string>
+			<key>targetProxy</key>
+			<string>22E11ED46FF1BB3F4431738A9F818CF4</string>
 		</dict>
 		<key>D24F7E93C390D0E9F0720177A28EFF78</key>
 		<dict>
@@ -2981,6 +2932,24 @@
 				</array>
 			</dict>
 		</dict>
+		<key>D25FFF0DE779B524F041896FEEA73F71</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F6B4720FE7F2CECE068F7920CED4ECE4</string>
+				<string>93206DED99DA1F6A76782CF60F7D3D7D</string>
+				<string>816A81E8C417E45C4B08626CDA047403</string>
+				<string>A45A331CB817E33C156B9DC1462B80BF</string>
+				<string>C305F002D672842DE7FCE196ABD1450E</string>
+				<string>A72E79DB16593CF353562CCCDC8BD321</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D2841E01C0C7FE46611C575C86192853</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -2991,6 +2960,20 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>D34B298596207C2C97104EF5736A7E85</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9AB10413E687909177A8486404844C26</string>
+				<string>91D353C0039BFC66DC482C3C43239133</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>D3B73EC94E0A42B0136EE92211BE8FF0</key>
 		<dict>
@@ -3033,7 +3016,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>C8334134ACA89F19A326D19240A2791A</string>
+			<string>D25FFF0DE779B524F041896FEEA73F71</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -3047,19 +3030,8 @@
 				<string>FB34B160C12325AF10DF86549782C00D</string>
 				<string>96EE347EFD69D3C617A937C1A7E47820</string>
 				<string>EDCE578F6677325C7247D8B81737CD51</string>
-				<string>3658C1F6C2FD6E93986668439E034D49</string>
+				<string>3738623F48596EAB9BB3B3C74060F845</string>
 			</array>
-		</dict>
-		<key>D50A0F0A478873AFC9E80FAAFBB75F5D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>RSMoneyMaker-RSStoreKit</string>
-			<key>target</key>
-			<string>3658C1F6C2FD6E93986668439E034D49</string>
-			<key>targetProxy</key>
-			<string>27869F7EFFFEC97A9B7E37A5B872ABD6</string>
 		</dict>
 		<key>D5BF9A7B5485387000E1DED9C72F6AFE</key>
 		<dict>
@@ -3125,21 +3097,6 @@
 			<string>1F13872135AE06D890BF9A32135F6DCF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>D865EC552A6621E9EA294D187D4F1F4D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libRSMoneyMaker.a</string>
-			<key>path</key>
-			<string>libRSMoneyMaker.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>DA30B667518AADD636C7339DD613F46B</key>
 		<dict>
@@ -3343,7 +3300,7 @@
 			<key>buildPhases</key>
 			<array>
 				<string>7D0D3CB780D6E993D75BE1A81B9B82B4</string>
-				<string>1E47CC9E7DD917241465DC25652F212C</string>
+				<string>598E7922028A5372F62F2959F080D4F7</string>
 				<string>B48C6AE78826EEF30C1D69D04607AC3B</string>
 			</array>
 			<key>buildRules</key>
@@ -3351,7 +3308,7 @@
 			<key>dependencies</key>
 			<array>
 				<string>C201F992A67E89164A3ADDACFAF35850</string>
-				<string>D50A0F0A478873AFC9E80FAAFBB75F5D</string>
+				<string>D1453AF2DDF5E51BB47510555339A159</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -3360,7 +3317,7 @@
 			<key>productName</key>
 			<string>RSMoneyMaker</string>
 			<key>productReference</key>
-			<string>D865EC552A6621E9EA294D187D4F1F4D</string>
+			<string>A45A331CB817E33C156B9DC1462B80BF</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3376,6 +3333,21 @@
 			<string>96EE347EFD69D3C617A937C1A7E47820</string>
 			<key>remoteInfo</key>
 			<string>RSInterfaceKit-RSInterfaceKit</string>
+		</dict>
+		<key>EE9281D3C128563DE78D61E517DB2788</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8B316550CD0A4D02AA3CBE877F49AC42</string>
+				<string>540CD90AF56B14D7335264D4C5A7EC40</string>
+				<string>EF08C08BE9688498E15C05FCC57A6CB4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EEA2C9DE2858E092C940933E82E7EEAB</key>
 		<dict>
@@ -3403,6 +3375,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>EF08C08BE9688498E15C05FCC57A6CB4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>EF36420EDFE5690D19508FF2CF81AB3B</key>
 		<dict>
@@ -3470,6 +3455,17 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>EFD14CE10DCBB31014410274D6B54E97</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>F35343815B883C6B2166AF654141CB56</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -3507,7 +3503,7 @@
 		<key>F49A10FB94568E1A8540337E6DBA2D83</key>
 		<dict>
 			<key>fileRef</key>
-			<string>28BB94F569CDD92B189C073819DA1992</string>
+			<string>8B316550CD0A4D02AA3CBE877F49AC42</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3517,6 +3513,32 @@
 			<string>1BBE2E4AA4039928D2DE412CC9C7E3F6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>F546E36C073CA1E97D99C67662A19158</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F6B4720FE7F2CECE068F7920CED4ECE4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-RSMoneyMaker.a</string>
+			<key>path</key>
+			<string>libPods-RSMoneyMaker.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>F7254BA9DF188CD2CA2159BF7E61FD27</key>
 		<dict>
@@ -3544,20 +3566,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>F91D3B858B477309160C3BBB60EC26A5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A24CC9BBA876790215585E42FB5DEAF3</string>
-				<string>D10B975FE912BC465B2C5C72845DA9FE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
 		<key>F943CA3A40B2FA5F6F32F251493B1D63</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3572,6 +3580,13 @@
 			<string>Pod/Classes/LoadingView/UIView+LoadingOverlay.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FB22DD04B4CCD58D8B417DF0A453D007</key>
+		<dict>
+			<key>fileRef</key>
+			<string>540CD90AF56B14D7335264D4C5A7EC40</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>FB34B160C12325AF10DF86549782C00D</key>
 		<dict>
@@ -3596,7 +3611,7 @@
 			<key>productName</key>
 			<string>RSInterfaceKit</string>
 			<key>productReference</key>
-			<string>FBC76570324E8B75B1F8146C6263CEBA</string>
+			<string>816A81E8C417E45C4B08626CDA047403</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3680,21 +3695,6 @@
 			<string>Pods-RSMoneyMaker-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FBC76570324E8B75B1F8146C6263CEBA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libRSInterfaceKit.a</string>
-			<key>path</key>
-			<string>libRSInterfaceKit.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>FBD00A42BBB5398093FF44E901084ABC</key>
 		<dict>
