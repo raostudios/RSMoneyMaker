@@ -121,7 +121,6 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 
 -(void) updateDefaultsForProduct:(IAPProduct *)product withReceipt:(NSDictionary *)transactions {
 
-    NSString *productIdentifier = product.iapIdentifier;
     for (NSDictionary *transaction in transactions) {
         if ([self isCurrentTransaction:transaction]) {
             NSDate *expiresDate = [NSDate dateWithTimeIntervalSince1970:([transaction[expiresDateKey] doubleValue]/1000)];

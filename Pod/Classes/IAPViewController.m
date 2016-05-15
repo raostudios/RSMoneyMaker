@@ -104,7 +104,7 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     return UIInterfaceOrientationPortrait;
 }
 
--(NSUInteger)supportedInterfaceOrientations {
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
 
