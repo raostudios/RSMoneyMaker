@@ -10,7 +10,7 @@
 
 @interface IAPManager ()<SKProductsRequestDelegate>
 
-@property (nonatomic, strong) NSArray<IAPProduct *> *products;
+@property (nonatomic, strong) NSArray<SKProduct *> *products;
 @property (nonatomic, strong) SKProductsRequest *request;
 @property (nonatomic, strong) SKReceiptRefreshRequest *refreshReceiptRequest;
 @property (nonatomic, copy) void (^completion)(NSError *error);
