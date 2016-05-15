@@ -40,9 +40,11 @@ IAPManager *manager = [IAPManager sharedManager];
 }];
 ```
 
+### UI Components
+
 ## Author
 
-Venkat S. Rao, vrao423@gmail.com
+Venkat S. Rao, venkat@raostudios.com
 
 ## License
 
