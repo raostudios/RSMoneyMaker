@@ -22,6 +22,17 @@ pod "RSMoneyMaker"
 
 ## Usage
 
+### Initialize
+
+```[IAPManager initializeStoreWithProducts:@[weatherProduct] withSharedSecret:@"..."];
+
+### Make Purchase
+
+```IAPManager *manager = [IAPManager sharedManager];
+    [manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct withCompletion:^(NSError *error) {
+      ...
+    }];
+
 
 ## Author
 
