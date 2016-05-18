@@ -24,13 +24,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [IAPManager new];
-        NSMutableSet *set = [NSMutableSet new];
-        for (IAPProduct *product in [IAPProducts products]) {
-            [set addObject:product.iapIdentifier];
-        }
-        manager.request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];
-        manager.request.delegate = manager;
-        [manager.request start];
     });
     return manager;
 }
@@ -78,6 +71,8 @@
     self.completion = completion;
 }
 
+#pragma mark - SKPaymentTransactionObserver
+
 -(void) paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
     
     for (SKPaymentTransaction *transaction in transactions) {
@@ -124,10 +119,18 @@
     
 }
 
-+(void) initializeStoreWithProducts:(NSArray<IAPProduct *> *)products withSharedSecret:(NSString *)secret {
+-(void) initializeStoreWithProducts:(NSArray<IAPProduct *> *)products withSharedSecret:(NSString *)secret {
     [IAPProducts setProducts:products];
-    [[SKPaymentQueue defaultQueue] addTransactionObserver:[IAPManager sharedManager]];
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     [[AppReceiptManager sharedManager] setSharedSecret:secret];
+    
+    NSMutableSet *set = [NSMutableSet new];
+    for (IAPProduct *product in [IAPProducts products]) {
+        [set addObject:product.iapIdentifier];
+    }
+    self.request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];
+    self.request.delegate = self;
+    [self.request start];
 }
 
 @end

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for RSUsers.
-FOUNDATION_EXPORT double RSUsersVersionNumber;
+//! Project version number for RSMoneyMaker.
+FOUNDATION_EXPORT double RSMoneyMakerNumber;
 
 //! Project version string for RSUsers.
-FOUNDATION_EXPORT const unsigned char RSUsersVersionString[];
+FOUNDATION_EXPORT const unsigned char RSMoneyMakerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RSUsers/PublicHeader.h>
 

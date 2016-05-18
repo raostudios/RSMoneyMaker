@@ -18,8 +18,8 @@
 -(void) purchaseProduct:(SKProduct *)product withCompletion:(void(^)(NSError *))completion;
 -(void)restorePurchasesWithCompletion:(void(^)(NSError *))completion;
 -(SKProduct *)storeProductForIdentifier:(NSString *)identifier;
-+(instancetype) sharedManager;
+-(void) initializeStoreWithProducts:(NSArray<IAPProduct *> *)productsd withSharedSecret:(NSString *)secret;
 
-+(void) initializeStoreWithProducts:(NSArray<IAPProduct *> *)productsd withSharedSecret:(NSString *)secret;
++(instancetype) sharedManager;
 
 @end
