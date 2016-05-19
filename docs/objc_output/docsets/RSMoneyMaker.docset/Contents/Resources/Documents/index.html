@@ -13,7 +13,7 @@
     <a title="RSMoneyMaker  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">RSMoneyMaker Docs</a> (0% documented)</p>
+        <p><a href="index.html">RSMoneyMaker Docs</a> (3% documented)</p>
         <p class="header-right"><a href="https://github.com/raostudios/RSMoneyMaker"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -27,6 +27,57 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Categories/SKProduct(LocalizedPrice).html">SKProduct(LocalizedPrice)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AppReceiptManager.html">AppReceiptManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IAPManager.html">IAPManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IAPMarketingItem.html">IAPMarketingItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IAPProduct.html">IAPProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IAPProducts.html">IAPProducts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IAPViewController.html">IAPViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@RSMoneyMakerNumber">RSMoneyMakerNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@RSMoneyMakerVersionString">RSMoneyMakerVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@defaultsExpirationKey">defaultsExpirationKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@defaultsTrialPeriodKey">defaultsTrialPeriodKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@initialExpiryUpdateKey">initialExpiryUpdateKey</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -39,19 +90,34 @@
 <a href="http://cocoapods.org/pods/RSMoneyMaker"><img src="https://img.shields.io/cocoapods/v/RSMoneyMaker.svg?style=flat" alt="Version"></a>
 <a href="http://cocoapods.org/pods/RSMoneyMaker"><img src="https://img.shields.io/cocoapods/l/RSMoneyMaker.svg?style=flat" alt="License"></a>
 <a href="http://cocoapods.org/pods/RSMoneyMaker"><img src="https://img.shields.io/cocoapods/p/RSMoneyMaker.svg?style=flat" alt="Platform"></a></p>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
+<a href='#components' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='components'>Components</h2>
 
-<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<p>RSMoneyMaker-Core -
+RSMoneyMaker-UI - </p>
 <a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+
+<p>This project has only been tested on iOS.</p>
 <a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
 
 <p>RSMoneyMaker is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile:</p>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"RSMoneyMaker"</span>
 </code></pre>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<a href='#initialize' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='initialize'>Initialize</h3>
+<pre class="highlight plaintext"><code>[IAPManager initializeStoreWithProducts:@[weatherProduct] withSharedSecret:@"..."];
+</code></pre>
+<a href='#make_purchase' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='make_purchase'>Make Purchase</h3>
+<pre class="highlight plaintext"><code>IAPManager *manager = [IAPManager sharedManager];
+[manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct withCompletion:^(NSError *error) {
+ ...
+}];
+</code></pre>
+<a href='#ui_components' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='ui_components'>UI Components</h3>
 <a href='#author' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='author'>Author</h2>
 
-<p>Venkat S. Rao, <a href="mailto:vrao423@gmail.com">vrao423@gmail.com</a></p>
+<p>Venkat S. Rao, <a href="mailto:venkat@raostudios.com">venkat@raostudios.com</a></p>
 <a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='license'>License</h2>
 
 <p>RSStoreKit is available under the MIT license. See the LICENSE file for more info.</p>
@@ -59,7 +125,7 @@ it, simply add the following line to your Podfile:</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://www.raostudios.com" target="_blank" rel="external">Rao Studios</a>. All rights reserved. (Last updated: 2016-05-15)</p>
+          <p>&copy; 2016 <a class="link" href="https://www.raostudios.com" target="_blank" rel="external">Rao Studios</a>. All rights reserved. (Last updated: 2016-05-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
