@@ -809,16 +809,6 @@ fi
 				<string>RSMoneyMaker/RSMoneyMaker-Info.plist</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>8.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-isystem</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-				</array>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
 				<string>org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}</string>
 				<key>PRODUCT_NAME</key>
@@ -855,16 +845,6 @@ fi
 				<string>RSMoneyMaker/RSMoneyMaker-Info.plist</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>8.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-isystem</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>-ObjC</string>
-				</array>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
 				<string>org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}</string>
 				<key>PRODUCT_NAME</key>
