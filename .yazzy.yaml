@@ -1,0 +1,15 @@
+
+objc: true
+sdk: iphonesimulator
+clean: true
+podspec: 'RSMoneyMaker.podspec'
+
+framework-root: .
+umbrella-header: 'Pod/Classes/RSMoneyMaker.h'
+module: RSMoneyMaker
+
+author: 'Rao Studios'
+author_url: https://www.raostudios.com
+github_url: https://github.com/raostudios/RSMoneyMaker
+
+output: docs/objc_output
