@@ -55,14 +55,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>1464209C8BF0C78082CD75E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CAE63E7BFF10F639DCC010C4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>31532E8EDFD5E05AFA9497D4</key>
+		<key>21192B05C755AF827E4D3325</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -71,9 +64,24 @@ fi
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-RSStoreKit.release.xcconfig</string>
+			<string>Pods-Tests.release.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RSStoreKit/Pods-RSStoreKit.release.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>383B00E2A1B18A6BBB27BD26</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RSMoneyMaker.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -106,26 +114,6 @@ fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
-		</dict>
-		<key>4C6E384D119BB11D1F5AB7CA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7F7094508A38F180D954D52A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4E9FC6DDAF246665804A5254</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-RSStoreKit.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>6003F581195388D10070C39A</key>
 		<dict>
@@ -231,7 +219,7 @@ fi
 				<string>6003F590195388D20070C39A</string>
 				<string>6003F592195388D20070C39A</string>
 				<string>6003F58E195388D20070C39A</string>
-				<string>4C6E384D119BB11D1F5AB7CA</string>
+				<string>A30F5C2018601D4B2C3FAE86</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -317,9 +305,8 @@ fi
 				<string>6003F58F195388D20070C39A</string>
 				<string>6003F591195388D20070C39A</string>
 				<string>6003F5AF195388D20070C39A</string>
-				<string>4E9FC6DDAF246665804A5254</string>
-				<string>CAE63E7BFF10F639DCC010C4</string>
-				<string>7F7094508A38F180D954D52A</string>
+				<string>6FBE88BD4E851F05CB3BD2D4</string>
+				<string>6DE1324BB365D3D4EEA99960</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -450,7 +437,7 @@ fi
 				<string>6003F5B0195388D20070C39A</string>
 				<string>6003F5B2195388D20070C39A</string>
 				<string>6003F5B1195388D20070C39A</string>
-				<string>1464209C8BF0C78082CD75E7</string>
+				<string>B2DAF6E8452D274F6F041EEE</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -790,7 +777,7 @@ fi
 		<key>6003F5C0195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>98DF21A550A163DEC6873621</string>
+			<string>BE3A29D540885816D98C36EC</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -826,7 +813,7 @@ fi
 		<key>6003F5C1195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>A9B21A66D40A722315D8872C</string>
+			<string>383B00E2A1B18A6BBB27BD26</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -876,7 +863,7 @@ fi
 		<key>6003F5C3195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>BA223D0FC0195F380BB5B0BB</string>
+			<string>BCED26A5BE88DBE2531B162B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -920,7 +907,7 @@ fi
 		<key>6003F5C4195388D20070C39A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>640F8E943C4D0CA84A980A3D</string>
+			<string>21192B05C755AF827E4D3325</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -982,21 +969,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>640F8E943C4D0CA84A980A3D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>6A1ED8C29898EF5600EE3A25</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1021,7 +993,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>7F7094508A38F180D954D52A</key>
+		<key>6DE1324BB365D3D4EEA99960</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -1031,6 +1003,19 @@ fi
 			<string>PBXFileReference</string>
 			<key>path</key>
 			<string>libPods-RSMoneyMaker.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6FBE88BD4E851F05CB3BD2D4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Tests.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
@@ -1347,50 +1332,12 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8D11C2F1974ED59BC0A983E9</key>
+		<key>A30F5C2018601D4B2C3FAE86</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>6DE1324BB365D3D4EEA99960</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RSStoreKit.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RSStoreKit/Pods-RSStoreKit.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98DF21A550A163DEC6873621</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RSMoneyMaker.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9B21A66D40A722315D8872C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RSMoneyMaker.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>AC3B82C84D646C28DDFA8456</key>
 		<dict>
@@ -1416,20 +1363,12 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>BA223D0FC0195F380BB5B0BB</key>
+		<key>B2DAF6E8452D274F6F041EEE</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>6FBE88BD4E851F05CB3BD2D4</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>BC45D9971788E387EFDB0066</key>
 		<dict>
@@ -1455,16 +1394,44 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
+		<key>BCED26A5BE88DBE2531B162B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Tests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE3A29D540885816D98C36EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RSMoneyMaker.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RSMoneyMaker/Pods-RSMoneyMaker.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C612BDE7C916C6D9F5DC99DE</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>8D11C2F1974ED59BC0A983E9</string>
-				<string>31532E8EDFD5E05AFA9497D4</string>
-				<string>BA223D0FC0195F380BB5B0BB</string>
-				<string>640F8E943C4D0CA84A980A3D</string>
-				<string>A9B21A66D40A722315D8872C</string>
-				<string>98DF21A550A163DEC6873621</string>
+				<string>BE3A29D540885816D98C36EC</string>
+				<string>383B00E2A1B18A6BBB27BD26</string>
+				<string>BCED26A5BE88DBE2531B162B</string>
+				<string>21192B05C755AF827E4D3325</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1472,19 +1439,6 @@ fi
 			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CAE63E7BFF10F639DCC010C4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>DA0772217E86340089768685</key>
 		<dict>

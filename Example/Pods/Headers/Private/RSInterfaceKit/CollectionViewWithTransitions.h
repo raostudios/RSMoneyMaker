@@ -1,1 +1,0 @@
-../../../RSInterfaceKit/Pod/Classes/CollectionViewWithTransitions/CollectionViewWithTransitions.h

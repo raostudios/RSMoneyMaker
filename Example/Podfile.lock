@@ -1,29 +1,29 @@
 PODS:
-  - RSInterfaceKit (0.0.36):
-    - RSInterfaceKit/Alerts (= 0.0.36)
-    - RSInterfaceKit/AutoLayoutHelpers (= 0.0.36)
-    - RSInterfaceKit/CollectionViewWithTransitions (= 0.0.36)
-    - RSInterfaceKit/FullScreenImageView (= 0.0.36)
-    - RSInterfaceKit/LoadingView (= 0.0.36)
-    - RSInterfaceKit/PortraitOnlyNavigation (= 0.0.36)
-    - RSInterfaceKit/RSCarouselDissolvingImageView (= 0.0.36)
-    - RSInterfaceKit/RSCarouselScrollView (= 0.0.36)
-    - RSInterfaceKit/RSSettings (= 0.0.36)
-    - RSInterfaceKit/ZoomableImageView (= 0.0.36)
-  - RSInterfaceKit/Alerts (0.0.36):
+  - RSInterfaceKit (0.0.38):
+    - RSInterfaceKit/Alerts (= 0.0.38)
+    - RSInterfaceKit/AutoLayoutHelpers (= 0.0.38)
+    - RSInterfaceKit/CollectionViewWithTransitions (= 0.0.38)
+    - RSInterfaceKit/FullScreenImageView (= 0.0.38)
+    - RSInterfaceKit/LoadingView (= 0.0.38)
+    - RSInterfaceKit/PortraitOnlyNavigation (= 0.0.38)
+    - RSInterfaceKit/RSCarouselDissolvingImageView (= 0.0.38)
+    - RSInterfaceKit/RSCarouselScrollView (= 0.0.38)
+    - RSInterfaceKit/RSSettings (= 0.0.38)
+    - RSInterfaceKit/ZoomableImageView (= 0.0.38)
+  - RSInterfaceKit/Alerts (0.0.38):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/AutoLayoutHelpers (0.0.36)
-  - RSInterfaceKit/CollectionViewWithTransitions (0.0.36)
-  - RSInterfaceKit/FullScreenImageView (0.0.36):
+  - RSInterfaceKit/AutoLayoutHelpers (0.0.38)
+  - RSInterfaceKit/CollectionViewWithTransitions (0.0.38)
+  - RSInterfaceKit/FullScreenImageView (0.0.38):
     - RSInterfaceKit/ZoomableImageView
-  - RSInterfaceKit/LoadingView (0.0.36):
+  - RSInterfaceKit/LoadingView (0.0.38):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/PortraitOnlyNavigation (0.0.36)
-  - RSInterfaceKit/RSCarouselDissolvingImageView (0.0.36)
-  - RSInterfaceKit/RSCarouselScrollView (0.0.36)
-  - RSInterfaceKit/RSSettings (0.0.36):
+  - RSInterfaceKit/PortraitOnlyNavigation (0.0.38)
+  - RSInterfaceKit/RSCarouselDissolvingImageView (0.0.38)
+  - RSInterfaceKit/RSCarouselScrollView (0.0.38)
+  - RSInterfaceKit/RSSettings (0.0.38):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/ZoomableImageView (0.0.36)
+  - RSInterfaceKit/ZoomableImageView (0.0.38)
   - RSMoneyMaker (0.0.6):
     - RSMoneyMaker/RSMoneyMaker-Core (= 0.0.6)
     - RSMoneyMaker/RSMoneyMaker-UI (= 0.0.6)
@@ -40,7 +40,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RSInterfaceKit: 39740b23e6c257ab4482c7d892e533c7dd02236d
+  RSInterfaceKit: 576d9bd8ce5c85cb74fdd9fb9da04088845266c8
   RSMoneyMaker: 25143d0eac6f5f533028f5a58aa9e8ace1d6616e
 
 COCOAPODS: 0.39.0
