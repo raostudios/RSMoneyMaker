@@ -29,6 +29,12 @@ pod "RSMoneyMaker"
 ### Initialize
 
 ```objective-c
+
+IAPProduct *weatherProduct = [IAPProduct new];
+weatherProduct.iapIdentifier = WeatherProductIdentifier;
+weatherProduct.defaults = @{ @"weather_location_type": @"currentLocation",
+                             @"show_weather": @YES };
+                             
 [IAPManager initializeStoreWithProducts:@[weatherProduct] withSharedSecret:@"..."];
 ```
 ### Make Purchase
