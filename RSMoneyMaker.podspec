@@ -21,6 +21,7 @@ s.public_header_files = 'Pod/Classes/RSMoneyMaker.h'
 s.subspec 'RSMoneyMaker-Core' do |sdkit|
 sdkit.source_files = 'Pod/Classes/Core/*.{h,m}'
 sdkit.public_header_files = 'Pod/Classes/Core/*.h'
+sdkit.dependency 'GCNetworkReachability'
 end
 
 s.subspec 'RSMoneyMaker-UI' do |sdkit|

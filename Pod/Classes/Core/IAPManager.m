@@ -6,7 +6,14 @@
 //
 //
 
-#import <RSMoneyMaker/RSMoneyMaker.h>
+
+#import "IAPManager.h"
+#import "IAPProducts.h"
+#import "AppReceiptManager.h"
+#import "IAPProduct.h"
+#import "GCNetworkReachability.h"
+
+@import StoreKit;
 
 @interface IAPManager ()<SKProductsRequestDelegate>
 
@@ -14,6 +21,7 @@
 @property (nonatomic, strong) SKProductsRequest *request;
 @property (nonatomic, strong) SKReceiptRefreshRequest *refreshReceiptRequest;
 @property (nonatomic, copy) void (^completion)(NSError *error);
+@property (nonatomic, strong) GCNetworkReachability *reachability;
 
 @end
 
@@ -52,6 +60,11 @@
 }
 
 -(void) purchaseProduct:(SKProduct *)product withCompletion:(void(^)(NSError *))completion {
+    if (!product) {
+        completion([NSError errorWithDomain:@"No Product" code:0 userInfo:@{NSLocalizedDescriptionKey: @"Product Not Loaded"}]);
+        return;
+    }
+    
     SKPayment * payment = [SKPayment paymentWithProduct:product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
     self.completion = completion;
@@ -116,7 +129,26 @@
 
 // TODO: do some error handling
 -(void) request:(SKRequest *)request didFailWithError:(NSError *)error {
+    NSLog(@"error: %@", error);
     
+    NSNumber *domain = error.userInfo[@"_kCFStreamErrorDomainKey"];
+    NSNumber *key = error.userInfo[@"_kCFStreamErrorCodeKey"];
+
+    if ([domain integerValue] == 12 && [key integerValue] == 8) {
+        self.reachability = [[GCNetworkReachability alloc] initWithHostName:@"www.google.com"];
+        
+        [self.reachability startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
+            switch (status) {
+                case GCNetworkReachabilityStatusNotReachable:
+                    NSLog(@"No connection");
+                    break;
+                case GCNetworkReachabilityStatusWWAN:
+                case GCNetworkReachabilityStatusWiFi:
+                    [self loadProducts];
+                    break;
+            }
+        }];
+     }
 }
 
 -(void) initializeStoreWithProducts:(NSArray<IAPProduct *> *)products withSharedSecret:(NSString *)secret {
@@ -124,10 +156,15 @@
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     [[AppReceiptManager sharedManager] setSharedSecret:secret];
     
+    [self loadProducts];
+}
+
+-(void)loadProducts {
     NSMutableSet *set = [NSMutableSet new];
     for (IAPProduct *product in [IAPProducts products]) {
         [set addObject:product.iapIdentifier];
     }
+    
     self.request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];
     self.request.delegate = self;
     [self.request start];

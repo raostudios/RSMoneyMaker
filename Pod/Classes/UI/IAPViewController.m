@@ -42,15 +42,25 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
                                                                       metrics:nil
                                                                         views:@{@"toolbar":toolbar}]];
     
-    UIBarButtonItem *buttonBuy = [[UIBarButtonItem alloc] initWithTitle:[NSString stringWithFormat:@"Buy(%@/yr after 1 month free trial)", [[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct localizedPrice]]
+    SKProduct *product = [IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct;
+    NSString *marketingString = [NSString stringWithFormat:@"Buy(%@/yr after 1 month free trial)", [product localizedPrice]];
+
+    if (!product) {
+        marketingString = @"Buy(1 month free trial)";
+    }
+    
+    UIBarButtonItem *buttonBuy = [[UIBarButtonItem alloc] initWithTitle:marketingString
                                                                   style:UIBarButtonItemStyleDone
                                                                  target:self
                                                                  action:@selector(buyPressed:)];
-    toolbar.items = @[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-                                                                    target:nil
-                                                                    action:nil],
+    
+    UIBarButtonItem *flexibleItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                  target:nil
+                                                                                  action:nil];
+    
+    toolbar.items = @[flexibleItem,
                       buttonBuy,
-                      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil]];
+                      flexibleItem];
     
     
     self.carouselView = [[RSCarouselView alloc] initWithAutoLayout];
@@ -149,17 +159,31 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     [self.view showLoadingOverlayWithText:[NSString stringWithFormat:@"Purchasing %@.", product.storeKitProduct.localizedTitle]];
     
     IAPManager *manager = [IAPManager sharedManager];
-    [manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct withCompletion:^(NSError *error) {
-        if (!error) {
-            [self.navigationController popViewControllerAnimated:YES];
-        }
-        [self.view hideLoadingOverlay];
-    }];
+    [manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct
+              withCompletion:^(NSError *error) {
+                  
+                  [self.view hideLoadingOverlay];
+                  
+                  if (error) {
+                      
+                      UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error!"
+                                                                                     message:error.localizedDescription
+                                                                              preferredStyle:UIAlertControllerStyleAlert];
+                      
+                      [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+                      
+                      [self presentViewController:alert animated:YES completion:nil];
+                      
+                      return;
+                  }
+                  
+                  [self.navigationController popViewControllerAnimated:YES];
+              }];
 }
 
 -(void) restorePressed:(UIBarButtonItem *)button {
     [self.carouselView stop];
-
+    
     IAPProduct *product = [IAPProducts productForIdentifier:self.productIdentifier];
     [self.view showLoadingOverlayWithText:[NSString stringWithFormat:@"Restoring %@.", product.storeKitProduct.localizedTitle]];
     
