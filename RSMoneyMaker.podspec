@@ -6,7 +6,7 @@
 Pod::Spec.new do |s|
 
 s.name             = "RSMoneyMaker"
-s.version          = "0.0.6"
+s.version          = "0.0.7"
 s.summary          = "RSMoneyMaker provides an easy a way to implement IAPs"
 s.homepage         = "https://github.com/raostudios/RSMoneyMaker"
 s.license          = 'MIT'
