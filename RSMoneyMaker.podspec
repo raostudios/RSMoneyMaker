@@ -16,7 +16,7 @@ s.social_media_url = 'https://twitter.com/venkatrao'
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
-s.public_header_files = 'Pod/Classes/RSMoneyMaker.h'
+s.public_header_files = 'Pod/Classes/*.h'
 
 s.subspec 'RSMoneyMaker-Core' do |sdkit|
 sdkit.source_files = 'Pod/Classes/Core/*.{h,m}'
