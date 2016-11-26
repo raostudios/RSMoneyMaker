@@ -37,7 +37,6 @@
 }
 
 -(BOOL) hasPurchasedFeature:(NSString *)feature {
-
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, [IAPProducts productForIdentifier:feature].iapIdentifier]];
