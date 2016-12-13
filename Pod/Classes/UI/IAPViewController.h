@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSString *productIdentifier;
 
+-(instancetype)initWithCompletion:(void(^)(BOOL))completionBlock;
+
 @end

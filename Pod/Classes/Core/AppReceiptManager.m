@@ -111,7 +111,9 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
                                            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:initialExpiryUpdateKey];
                                            [[NSUserDefaults standardUserDefaults] synchronize];
                                        } else {
-                                           completion(status);
+                                           if (completion) {
+                                               completion(status);
+                                           }
                                        }
                                    }
                                }];

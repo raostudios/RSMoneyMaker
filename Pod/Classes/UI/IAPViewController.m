@@ -22,12 +22,23 @@
 @interface IAPViewController () <RSCarouselViewDataSource>
 
 @property (nonatomic, strong) RSCarouselView *carouselView;
+@property (nonatomic, copy) void (^completionBlock)(BOOL);
 
 @end
 
 @implementation IAPViewController
 
 static NSString *const IAPCellIdentifier = @"IAPCELL";
+
+-(instancetype)initWithCompletion:(void(^)(BOOL))completionBlock {
+    self = [super init];
+    
+    if (self) {
+        self.completionBlock = completionBlock;
+    }
+    
+    return self;
+}
 
 -(void)viewDidLoad {
     
@@ -161,11 +172,13 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     IAPManager *manager = [IAPManager sharedManager];
     [manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct
               withCompletion:^(NSError *error) {
-                  
                   [self.view hideLoadingOverlay];
+
+                  if (self.completionBlock) {
+                      self.completionBlock(error == nil);
+                  }
                   
                   if (error) {
-                      
                       UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error!"
                                                                                      message:error.localizedDescription
                                                                               preferredStyle:UIAlertControllerStyleAlert];

@@ -28,7 +28,8 @@
         self.deviceFrame.contentMode = UIViewContentModeScaleAspectFit;
 
 
-        self.deviceFrame.image = [UIImage imageNamed:@"device" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:self.traitCollection];
+        self.deviceFrame.image = [UIImage imageNamed:@"device"
+                                            inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:self.traitCollection];
 
         
         [self.contentView addSubview:self.deviceFrame];
