@@ -9,10 +9,16 @@
 #import "IAPProduct.h"
 #import "IAPManager.h"
 
+@import StoreKit;
+
 @implementation IAPProduct
 
 -(SKProduct *)storeKitProduct {
     return [[IAPManager sharedManager] storeProductForIdentifier:self.iapIdentifier];
+}
+
+-(NSString *)buyTitle {
+    return [_buyTitle length] ? _buyTitle : self.storeKitProduct.localizedTitle;
 }
 
 @end

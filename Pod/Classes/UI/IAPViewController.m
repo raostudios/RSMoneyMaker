@@ -35,6 +35,7 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     
     if (self) {
         self.completionBlock = completionBlock;
+        self.showsRestore = YES;
     }
     
     return self;
@@ -92,13 +93,15 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
                                                                         views:@{@"toolbar":toolbar,
                                                                                 @"carouselView":self.carouselView,
                                                                                 @"topLayoutGuide":self.topLayoutGuide}]];
-    
-    UIBarButtonItem *restoreButton = [[UIBarButtonItem alloc] initWithTitle:@"Restore"
-                                                                      style:UIBarButtonItemStyleDone
-                                                                     target:self
-                                                                     action:@selector(restorePressed:)];
-    self.navigationItem.rightBarButtonItem = restoreButton;
-    self.title = [IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct.localizedTitle;
+    if(self.showsRestore) {
+        UIBarButtonItem *restoreButton = [[UIBarButtonItem alloc] initWithTitle:@"Restore"
+                                                                          style:UIBarButtonItemStyleDone
+                                                                         target:self
+                                                                         action:@selector(restorePressed:)];
+        self.navigationItem.rightBarButtonItem = restoreButton;
+    }
+
+    self.title = [IAPProducts productForIdentifier:self.productIdentifier].buyTitle;
     
     self.view.backgroundColor = [UIColor blackColor];
 }

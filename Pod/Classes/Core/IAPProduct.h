@@ -17,4 +17,6 @@
 @property (strong, nonatomic) NSDictionary *defaults;
 @property (strong, nonatomic) SKProduct *storeKitProduct;
 
+@property (strong, nonatomic) NSString *buyTitle;
+
 @end
