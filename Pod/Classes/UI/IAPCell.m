@@ -28,7 +28,7 @@
         self.deviceFrame.contentMode = UIViewContentModeScaleAspectFit;
 
 
-        self.deviceFrame.image = [UIImage imageNamed:@"device"
+        self.deviceFrame.image = [UIImage imageNamed:(([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ? @"device_ipad" : @"device")
                                             inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:self.traitCollection];
 
         
@@ -38,9 +38,7 @@
         self.imageViewMarketing.contentMode = UIViewContentModeScaleAspectFit;
         self.imageViewMarketing.clipsToBounds = YES;
         [self.contentView addSubview:self.imageViewMarketing];
-        
-        
-        
+                
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[labelTitle(30)]-[deviceFrame]-|"
                                                                                  options:0
                                                                                  metrics:nil
@@ -63,14 +61,14 @@
         
         CGFloat iphoneWidth = CGRectGetWidth([[UIScreen mainScreen] bounds]) / 375 * 220;
         if (CGRectGetWidth([[UIScreen mainScreen] bounds]) == 414.0) {
-            iphoneWidth = 245;
+            iphoneWidth = 223;
         } else if (CGRectGetWidth([[UIScreen mainScreen] bounds]) == 375.0) {
-            iphoneWidth = 216;
+            iphoneWidth = 192;
         } else if (CGRectGetWidth([[UIScreen mainScreen] bounds]) == 320.0) {
             if (CGRectGetHeight([[UIScreen mainScreen] bounds]) == 568.00) {
-                iphoneWidth = 173;
+                iphoneWidth = 150;
             } else {
-                iphoneWidth = 135;
+                iphoneWidth = 113;
             }
         }
         
@@ -80,7 +78,7 @@
                                                                         toItem:self.contentView
                                                                      attribute:NSLayoutAttributeWidth
                                                                     multiplier:0
-                                                                      constant:(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 505 : iphoneWidth]];
+                                                                      constant:(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 525 : iphoneWidth]];
         
         [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.imageViewMarketing attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.deviceFrame attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     }

@@ -26,6 +26,7 @@ end
 s.subspec 'RSMoneyMaker-UI' do |sdkit|
 sdkit.source_files = 'Pod/Classes/UI/*.{h,m}'
 sdkit.public_header_files = 'Pod/Classes/UI/*.h'
+sdkit.resources = 'Pod/Assets/*.png'
 sdkit.dependency 'RSMoneyMaker/RSMoneyMaker-Core'
 sdkit.dependency 'RSInterfaceKit'
 end
