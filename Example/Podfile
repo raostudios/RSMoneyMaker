@@ -2,10 +2,10 @@ platform :ios, '8.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'RSMoneyMaker', :exclusive => true do
+target 'RSMoneyMaker' do
   pod "RSMoneyMaker", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
+target 'Tests' do
   pod "RSMoneyMaker", :path => "../"
 end
