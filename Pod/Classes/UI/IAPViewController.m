@@ -22,7 +22,7 @@
 @interface IAPViewController () <RSCarouselViewDataSource>
 
 @property (nonatomic, strong) RSCarouselView *carouselView;
-@property (nonatomic, copy) void (^completionBlock)(BOOL);
+@property (nonatomic, copy) void (^completionBlock)(NSError *);
 
 @end
 
@@ -30,7 +30,7 @@
 
 static NSString *const IAPCellIdentifier = @"IAPCELL";
 
--(instancetype)initWithCompletion:(void(^)(BOOL))completionBlock {
+-(instancetype)initWithCompletion:(void(^)(NSError *))completionBlock {
     self = [super init];
     
     if (self) {
@@ -178,7 +178,7 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
                   [self.view hideLoadingOverlay];
 
                   if (self.completionBlock) {
-                      self.completionBlock(error == nil);
+                      self.completionBlock(error);
                   }
                   
                   if (error) {
