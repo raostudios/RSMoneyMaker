@@ -205,10 +205,15 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     
     IAPManager *manager = [IAPManager sharedManager];
     [manager restorePurchasesWithCompletion:^(NSError *error) {
+        [self.view hideLoadingOverlay];
+
+        if (self.completionBlock) {
+            self.completionBlock(error);
+        }
+        
         if (!error) {
             [self.navigationController popViewControllerAnimated:YES];
         }
-        [self.view hideLoadingOverlay];
     }];
 }
 

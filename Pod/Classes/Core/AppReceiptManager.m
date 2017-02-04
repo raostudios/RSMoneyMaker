@@ -46,11 +46,7 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 
 -(void) updateReceiptWithManualOverride:(BOOL)forced withCompletion:(void (^)(NSError *error)) completion {
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSTimeInterval ThirtyDays = 60*60*24*30;
-    NSDate *lastUpdateDate = [[defaults objectForKey:UpdateReceiptDate] dateByAddingTimeInterval:ThirtyDays];
-    
-    if ((!lastUpdateDate || [lastUpdateDate earlierDate:[NSDate date]] == lastUpdateDate) || forced) {
+    if ([self shouldUpdate] || forced) {
         NSURL *receiptUrl = [[NSBundle mainBundle] appStoreReceiptURL];
         if ([[NSFileManager defaultManager] fileExistsAtPath:[receiptUrl path]]) {
             self.completion = completion;
@@ -68,12 +64,21 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
                             }
                         }];
             
-        } else if(forced) {
+        } else if (forced) {
             SKReceiptRefreshRequest *request = [[SKReceiptRefreshRequest alloc] init];
             request.delegate = self;
             [request start];
         }
     }
+    
+}
+
+-(BOOL)shouldUpdate {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSTimeInterval ThirtyDays = 60*60*24*30;
+    NSDate *lastUpdateDate = [[defaults objectForKey:UpdateReceiptDate] dateByAddingTimeInterval:ThirtyDays];
+    
+    return (lastUpdateDate && [lastUpdateDate earlierDate:[NSDate date]] == lastUpdateDate);
 }
 
 -(void) verifyReceipt:(NSData *)receiptData withURL:(NSURL*)storeURL withCompletion:(void(^)(NSInteger))completion {
