@@ -29,12 +29,12 @@ PODS:
   - RSInterfaceKit/RSSettings (0.0.63):
     - RSInterfaceKit/AutoLayoutHelpers
   - RSInterfaceKit/ZoomableImageView (0.0.63)
-  - RSMoneyMaker (0.0.11):
-    - RSMoneyMaker/RSMoneyMaker-Core (= 0.0.11)
-    - RSMoneyMaker/RSMoneyMaker-UI (= 0.0.11)
-  - RSMoneyMaker/RSMoneyMaker-Core (0.0.11):
+  - RSMoneyMaker (0.0.13):
+    - RSMoneyMaker/RSMoneyMaker-Core (= 0.0.13)
+    - RSMoneyMaker/RSMoneyMaker-UI (= 0.0.13)
+  - RSMoneyMaker/RSMoneyMaker-Core (0.0.13):
     - GCNetworkReachability
-  - RSMoneyMaker/RSMoneyMaker-UI (0.0.11):
+  - RSMoneyMaker/RSMoneyMaker-UI (0.0.13):
     - RSInterfaceKit
     - RSMoneyMaker/RSMoneyMaker-Core
 
@@ -48,7 +48,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   GCNetworkReachability: 2a7dd53d362220326b3e38df68c91b3ef84418d1
   RSInterfaceKit: 607b3c3999bb895edd45d686feb5aa3d0a513f88
-  RSMoneyMaker: dd2074e0ae5d830950a07d725fdff3c5c30ba8c8
+  RSMoneyMaker: b75ffebc69df6690617a44c19f3494b03f04fac8
 
 PODFILE CHECKSUM: e6ea2c836fe0c14cb148c080c212f7056a98fc3e
 
