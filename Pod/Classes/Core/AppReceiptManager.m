@@ -63,7 +63,6 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
                                             }];
                             }
                         }];
-            
         } else if (forced) {
             SKReceiptRefreshRequest *request = [[SKReceiptRefreshRequest alloc] init];
             request.delegate = self;
@@ -155,21 +154,23 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setObject:[NSDate date] forKey:UpdateReceiptDate];
         
-        NSString *stringExpiration = [NSString stringWithFormat:defaultsExpirationKey, transaction[productIdentifierKey]];
-        [defaults setObject:expiresDate forKey:stringExpiration];
-        
-        NSString *stringForIsTrialPeriod = [NSString stringWithFormat:defaultsTrialPeriodKey, transaction[productIdentifierKey]];
-        [defaults setBool:[transaction[trialPeriodKey] boolValue] forKey:stringForIsTrialPeriod];
-        
-        NSString *keyForProductDefault = [NSString stringWithFormat:defaultSetKey, transaction[productIdentifierKey]];
-        if (![defaults boolForKey:keyForProductDefault]) {
-            [product.defaults enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-                [defaults setObject:obj forKey:key];
-            }];
-            [defaults setBool:YES forKey:keyForProductDefault];
+        if ([transaction[productIdentifierKey] isEqualToString:product.iapIdentifier]) {
+            NSString *stringExpiration = [NSString stringWithFormat:defaultsExpirationKey, product.productIdentifier];
+            [defaults setObject:expiresDate forKey:stringExpiration];
+            
+            NSString *stringForIsTrialPeriod = [NSString stringWithFormat:defaultsTrialPeriodKey, product.productIdentifier];
+            [defaults setBool:[transaction[trialPeriodKey] boolValue] forKey:stringForIsTrialPeriod];
+            
+            NSString *keyForProductDefault = [NSString stringWithFormat:defaultSetKey, product.productIdentifier];
+            if (![defaults boolForKey:keyForProductDefault]) {
+                [product.defaults enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                    [defaults setObject:obj forKey:key];
+                }];
+                [defaults setBool:YES forKey:keyForProductDefault];
+            }
+            
+            [defaults synchronize];
         }
-        
-        [defaults synchronize];
         
         if (self.completion) {
             self.completion(nil);
@@ -182,7 +183,5 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 -(void) productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
     [self updateReceiptWithManualOverride:NO withCompletion:self.completion];
 }
-
-
 
 @end

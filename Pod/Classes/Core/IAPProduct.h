@@ -10,13 +10,36 @@
 
 @class SKProduct;
 
+typedef NS_ENUM(NSUInteger, ProductType) {
+    ProductTypeSubscription,
+    ProductTypeConsumable
+};
+
+typedef NS_ENUM(NSUInteger, SubscriptionType) {
+    SubscriptionTypeMonthly,
+    SubscriptionTypeYearly
+};
+
+typedef NS_ENUM(NSUInteger, TrialLength) {
+    TrialLengthWeek,
+    TrialLengthMonth
+};
+
 @interface IAPProduct : NSObject
 
 @property (strong, nonatomic) NSString *iapIdentifier;
+@property (strong, nonatomic) NSString *productIdentifier;
+
 @property (strong, nonatomic) NSArray *images;
 @property (strong, nonatomic) NSDictionary *defaults;
 @property (strong, nonatomic) SKProduct *storeKitProduct;
 
 @property (strong, nonatomic) NSString *buyTitle;
+
+@property (assign, nonatomic) ProductType productType;
+@property (assign, nonatomic) SubscriptionType subscriptionLength;
+@property (assign, nonatomic) TrialLength trialLength;
+
+
 
 @end

@@ -33,7 +33,7 @@ static NSArray<IAPProduct *> *savedProducts;
 
 +(IAPProduct *) productForIdentifier:(NSString *)identifier {
     for (IAPProduct *product in savedProducts) {
-        if ([product.iapIdentifier isEqualToString:identifier]) {
+        if ([product.productIdentifier isEqualToString:identifier]) {
             return product;
         }
     }

@@ -54,11 +54,18 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
                                                                       metrics:nil
                                                                         views:@{@"toolbar":toolbar}]];
     
-    SKProduct *product = [IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct;
-    NSString *marketingString = [NSString stringWithFormat:@"Buy(%@/yr after 1 month free trial)", [product localizedPrice]];
-
+    IAPProduct *product = [IAPProducts productForIdentifier:self.productIdentifier];
+    SKProduct *storeProduct = product.storeKitProduct;
+    
+    NSString *trialString = product.trialLength == TrialLengthMonth ? @"1 Month" : @"1 Week";
+    
+    NSString *marketingString = [NSString stringWithFormat:@"Try for %@ (then %@/%@)",
+                                 trialString,
+                                 [storeProduct localizedPrice],
+                                 (product.subscriptionLength == SubscriptionTypeYearly) ? @"yr" : @"mth"];
+ 
     if (!product) {
-        marketingString = @"Buy(1 month free trial)";
+        marketingString = [NSString stringWithFormat:@"Buy(%@)", trialString];
     }
     
     UIBarButtonItem *buttonBuy = [[UIBarButtonItem alloc] initWithTitle:marketingString
