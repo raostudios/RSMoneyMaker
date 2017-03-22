@@ -182,25 +182,29 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     IAPManager *manager = [IAPManager sharedManager];
     [manager purchaseProduct:[IAPProducts productForIdentifier:self.productIdentifier].storeKitProduct
               withCompletion:^(NSError *error) {
-                  [self.view hideLoadingOverlay];
-
+                  
                   if (self.completionBlock) {
                       self.completionBlock(error);
                   }
                   
-                  if (error) {
-                      UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error!"
-                                                                                     message:error.localizedDescription
-                                                                              preferredStyle:UIAlertControllerStyleAlert];
+                  dispatch_async(dispatch_get_main_queue(), ^{
+                      [self.view hideLoadingOverlay];
                       
-                      [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+                      if (error) {
+                          UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error!"
+                                                                                         message:error.localizedDescription
+                                                                                  preferredStyle:UIAlertControllerStyleAlert];
+                          
+                          [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+                          
+                          [self presentViewController:alert animated:YES completion:nil];
+                          
+                          return;
+                      }
                       
-                      [self presentViewController:alert animated:YES completion:nil];
-                      
-                      return;
-                  }
-                  
-                  [self.navigationController popViewControllerAnimated:YES];
+                      [self.navigationController popViewControllerAnimated:YES];
+                  });
+
               }];
 }
 
@@ -212,15 +216,18 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     
     IAPManager *manager = [IAPManager sharedManager];
     [manager restorePurchasesWithCompletion:^(NSError *error) {
-        [self.view hideLoadingOverlay];
 
         if (self.completionBlock) {
             self.completionBlock(error);
         }
         
-        if (!error) {
-            [self.navigationController popViewControllerAnimated:YES];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.view hideLoadingOverlay];
+            
+            if (!error) {
+                [self.navigationController popViewControllerAnimated:YES];
+            }
+        });
     }];
 }
 

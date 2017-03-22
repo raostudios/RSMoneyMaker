@@ -114,11 +114,13 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
                                            }
                                            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:initialExpiryUpdateKey];
                                            [[NSUserDefaults standardUserDefaults] synchronize];
-                                       } else {
-                                           if (completion) {
-                                               completion(status);
-                                           }
+                                           
                                        }
+
+                                       if (completion) {
+                                           completion(status);
+                                       }
+                                       
                                    }
                                }];
     }
@@ -135,6 +137,10 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
                 break;
             }
         }
+    }
+    
+    if (self.completion) {
+        self.completion([NSError errorWithDomain:@"Nothing to Update" code:10 userInfo:nil]);
     }
 }
 

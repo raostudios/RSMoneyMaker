@@ -87,13 +87,15 @@
 
 -(void) paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
     
+    BOOL needUpdateReceipt = NO;
+    
     for (SKPaymentTransaction *transaction in transactions) {
         switch (transaction.transactionState) {
             case SKPaymentTransactionStatePurchasing:
                 break;
             case SKPaymentTransactionStateRestored:
             case SKPaymentTransactionStatePurchased:
-                [[AppReceiptManager sharedManager] updateReceiptWithManualOverride:YES withCompletion:self.completion];
+                needUpdateReceipt = YES;
                 [queue finishTransaction:transaction];
                 break;
             case SKPaymentTransactionStateFailed:
@@ -112,6 +114,10 @@
             default:
                 break;
         }
+    }
+    
+    if (needUpdateReceipt) {
+        [[AppReceiptManager sharedManager] updateReceiptWithManualOverride:YES withCompletion:self.completion];
     }
 }
 
