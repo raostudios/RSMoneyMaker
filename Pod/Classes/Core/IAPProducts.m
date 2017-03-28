@@ -57,7 +57,6 @@ static NSArray<IAPProduct *> *savedProducts;
     NSArray * products = [self productsForFeature: featureName];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
-    BOOL purchased = NO;
     for (IAPProduct *product in products) {
         NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, product.iapIdentifier]];
         if ([expiryDate compare:[NSDate date]] == NSOrderedDescending) {
