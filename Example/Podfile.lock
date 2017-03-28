@@ -1,40 +1,40 @@
 PODS:
   - GCNetworkReachability (1.3.2)
-  - RSInterfaceKit (0.0.67):
-    - RSInterfaceKit/Alerts (= 0.0.67)
-    - RSInterfaceKit/AutoLayoutHelpers (= 0.0.67)
-    - RSInterfaceKit/CollectionViewWithTransitions (= 0.0.67)
-    - RSInterfaceKit/FullScreenImageView (= 0.0.67)
-    - RSInterfaceKit/LoadingView (= 0.0.67)
-    - RSInterfaceKit/NavigationBarMenu (= 0.0.67)
-    - RSInterfaceKit/PopUps (= 0.0.67)
-    - RSInterfaceKit/PortraitOnlyNavigation (= 0.0.67)
-    - RSInterfaceKit/RSCarouselDissolvingImageView (= 0.0.67)
-    - RSInterfaceKit/RSCarouselScrollView (= 0.0.67)
-    - RSInterfaceKit/RSSettings (= 0.0.67)
-    - RSInterfaceKit/ZoomableImageView (= 0.0.67)
-  - RSInterfaceKit/Alerts (0.0.67):
+  - RSInterfaceKit (0.0.69):
+    - RSInterfaceKit/Alerts (= 0.0.69)
+    - RSInterfaceKit/AutoLayoutHelpers (= 0.0.69)
+    - RSInterfaceKit/CollectionViewWithTransitions (= 0.0.69)
+    - RSInterfaceKit/FullScreenImageView (= 0.0.69)
+    - RSInterfaceKit/LoadingView (= 0.0.69)
+    - RSInterfaceKit/NavigationBarMenu (= 0.0.69)
+    - RSInterfaceKit/PopUps (= 0.0.69)
+    - RSInterfaceKit/PortraitOnlyNavigation (= 0.0.69)
+    - RSInterfaceKit/RSCarouselDissolvingImageView (= 0.0.69)
+    - RSInterfaceKit/RSCarouselScrollView (= 0.0.69)
+    - RSInterfaceKit/RSSettings (= 0.0.69)
+    - RSInterfaceKit/ZoomableImageView (= 0.0.69)
+  - RSInterfaceKit/Alerts (0.0.69):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/AutoLayoutHelpers (0.0.67)
-  - RSInterfaceKit/CollectionViewWithTransitions (0.0.67)
-  - RSInterfaceKit/FullScreenImageView (0.0.67):
+  - RSInterfaceKit/AutoLayoutHelpers (0.0.69)
+  - RSInterfaceKit/CollectionViewWithTransitions (0.0.69)
+  - RSInterfaceKit/FullScreenImageView (0.0.69):
     - RSInterfaceKit/ZoomableImageView
-  - RSInterfaceKit/LoadingView (0.0.67):
+  - RSInterfaceKit/LoadingView (0.0.69):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/NavigationBarMenu (0.0.67)
-  - RSInterfaceKit/PopUps (0.0.67)
-  - RSInterfaceKit/PortraitOnlyNavigation (0.0.67)
-  - RSInterfaceKit/RSCarouselDissolvingImageView (0.0.67)
-  - RSInterfaceKit/RSCarouselScrollView (0.0.67)
-  - RSInterfaceKit/RSSettings (0.0.67):
+  - RSInterfaceKit/NavigationBarMenu (0.0.69)
+  - RSInterfaceKit/PopUps (0.0.69)
+  - RSInterfaceKit/PortraitOnlyNavigation (0.0.69)
+  - RSInterfaceKit/RSCarouselDissolvingImageView (0.0.69)
+  - RSInterfaceKit/RSCarouselScrollView (0.0.69)
+  - RSInterfaceKit/RSSettings (0.0.69):
     - RSInterfaceKit/AutoLayoutHelpers
-  - RSInterfaceKit/ZoomableImageView (0.0.67)
-  - RSMoneyMaker (0.0.14):
-    - RSMoneyMaker/RSMoneyMaker-Core (= 0.0.14)
-    - RSMoneyMaker/RSMoneyMaker-UI (= 0.0.14)
-  - RSMoneyMaker/RSMoneyMaker-Core (0.0.14):
+  - RSInterfaceKit/ZoomableImageView (0.0.69)
+  - RSMoneyMaker (0.0.17):
+    - RSMoneyMaker/RSMoneyMaker-Core (= 0.0.17)
+    - RSMoneyMaker/RSMoneyMaker-UI (= 0.0.17)
+  - RSMoneyMaker/RSMoneyMaker-Core (0.0.17):
     - GCNetworkReachability
-  - RSMoneyMaker/RSMoneyMaker-UI (0.0.14):
+  - RSMoneyMaker/RSMoneyMaker-UI (0.0.17):
     - RSInterfaceKit
     - RSMoneyMaker/RSMoneyMaker-Core
 
@@ -47,8 +47,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GCNetworkReachability: 2a7dd53d362220326b3e38df68c91b3ef84418d1
-  RSInterfaceKit: 8b70b8c5a2a4a94f6c33bb34263e478c468d4779
-  RSMoneyMaker: e4b438359eb277782292e625cded7f2e8a4fd5cd
+  RSInterfaceKit: b09d40a0ddbfe839499552daec1d8ad2731f9592
+  RSMoneyMaker: 17d62dc04758cc296ec9d33ef70cd4db91819845
 
 PODFILE CHECKSUM: e6ea2c836fe0c14cb148c080c212f7056a98fc3e
 
