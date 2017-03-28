@@ -39,8 +39,15 @@
 -(BOOL) hasPurchasedFeature:(NSString *)feature {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, [IAPProducts productForIdentifier:feature].productIdentifier]];
-    return [self hasPurchasedFeature:feature withExpiryDate:expiryDate];
+    NSArray * products = [IAPProducts productsForFeature:feature];
+    
+    BOOL purchased = NO;
+    for (IAPProduct *product in products) {
+        NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, product.iapIdentifier]];
+        purchased = purchased | [self hasPurchasedFeature:feature withExpiryDate:expiryDate];
+    }
+    
+    return purchased;
 }
 
 -(BOOL) hasPurchasedFeature:(NSString *)feature withExpiryDate:(NSDate *)expiryDate {

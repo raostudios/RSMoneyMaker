@@ -161,13 +161,16 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
         [defaults setObject:[NSDate date] forKey:UpdateReceiptDate];
         
         if ([transaction[productIdentifierKey] isEqualToString:product.iapIdentifier]) {
-            NSString *stringExpiration = [NSString stringWithFormat:defaultsExpirationKey, product.productIdentifier];
+            NSString *identifier = transaction[productIdentifierKey];
+            
+            NSString *stringExpiration = [NSString stringWithFormat:defaultsExpirationKey, identifier];
             [defaults setObject:expiresDate forKey:stringExpiration];
             
-            NSString *stringForIsTrialPeriod = [NSString stringWithFormat:defaultsTrialPeriodKey, product.productIdentifier];
+            NSString *stringForIsTrialPeriod = [NSString stringWithFormat:defaultsTrialPeriodKey, identifier];
             [defaults setBool:[transaction[trialPeriodKey] boolValue] forKey:stringForIsTrialPeriod];
             
-            NSString *keyForProductDefault = [NSString stringWithFormat:defaultSetKey, product.productIdentifier];
+            NSString *keyForProductDefault = [NSString stringWithFormat:defaultSetKey, identifier];
+            
             if (![defaults boolForKey:keyForProductDefault]) {
                 [product.defaults enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
                     [defaults setObject:obj forKey:key];

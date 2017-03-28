@@ -10,6 +10,7 @@
 #import "IAPProduct.h"
 #import "IAPMarketingItem.h"
 #import "IAPManager.h"
+#import "AppReceiptManager.h"
 
 #import <UIKit/UIKit.h>
 
@@ -33,11 +34,39 @@ static NSArray<IAPProduct *> *savedProducts;
 
 +(IAPProduct *) productForIdentifier:(NSString *)identifier {
     for (IAPProduct *product in savedProducts) {
-        if ([product.productIdentifier isEqualToString:identifier]) {
+        if ([product.iapIdentifier isEqualToString:identifier]) {
             return product;
         }
     }
     return nil;
 }
+
++ (NSArray<IAPProduct *> *)productsForFeature:(NSString *)featureName {
+    NSMutableArray *products = [NSMutableArray new];
+    
+    for (IAPProduct *product in savedProducts) {
+        if ([product.productIdentifier isEqualToString:featureName]) {
+            [products addObject: product];
+        }
+    }
+    
+    return products;
+}
+
++(IAPProduct *)purchasedProductForFeature:(NSString *)featureName {
+    NSArray * products = [self productsForFeature: featureName];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+
+    BOOL purchased = NO;
+    for (IAPProduct *product in products) {
+        NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, product.iapIdentifier]];
+        if ([expiryDate compare:[NSDate date]] == NSOrderedDescending) {
+            return product;
+        }
+    }
+    
+    return nil;
+}
+
 
 @end
