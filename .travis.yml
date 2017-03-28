@@ -10,7 +10,7 @@ rvm: 2.2.2
 before_install:
 - gem install bundler
 - bundle install
-- bundle exec pod install --project-directory=Example
+- bundle exec pod install --project-directory=Example || bundle exec pod install --repo-update --project-directory=Example
 install:
 script:
 - set -o pipefail && xcodebuild test -workspace Example/RSMoneyMaker.xcworkspace -scheme RSMoneyMaker-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
