@@ -13,5 +13,5 @@ before_install:
 - bundle exec pod install --project-directory=Example || bundle exec pod install --repo-update --project-directory=Example
 install:
 script:
-- set -o pipefail && xcodebuild clean test analyze -workspace Example/RSMoneyMaker.xcworkspace -scheme RSMoneyMaker-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0' | xcpretty -c
+- set -o pipefail && travis_retry xcodebuild clean test analyze -workspace Example/RSMoneyMaker.xcworkspace -scheme RSMoneyMaker-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0' | xcpretty -c
 - bundle exec pod lib lint --quick
