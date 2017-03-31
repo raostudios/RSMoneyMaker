@@ -27,6 +27,8 @@
 
 @implementation IAPManager
 
+NSString *const ProductsLoadedNotification = @"ProductsLoadedNotification";
+
 +(instancetype) sharedManager {
     static IAPManager *manager;
     static dispatch_once_t onceToken;
@@ -137,6 +139,9 @@
 
 -(void) productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
     self.products = response.products;
+
+    self.productsLoaded = YES;
+    [[NSNotificationCenter defaultCenter] postNotificationName:ProductsLoadedNotification object:nil];    
 }
 
 // TODO: do some error handling

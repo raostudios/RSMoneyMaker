@@ -23,6 +23,8 @@
 
 @property (nonatomic, strong) RSCarouselView *carouselView;
 @property (nonatomic, copy) void (^completionBlock)(NSError *);
+@property (nonatomic, strong) UIBarButtonItem *buttonBuy;
+@property (nonatomic, strong) UIBarButtonItem *restoreButton;
 
 @end
 
@@ -54,31 +56,17 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
                                                                       metrics:nil
                                                                         views:@{@"toolbar":toolbar}]];
     
-    IAPProduct *product = [IAPProducts productForIdentifier:self.productIdentifier];
-    SKProduct *storeProduct = product.storeKitProduct;
-    
-    NSString *trialString = product.trialLength == TrialLengthMonth ? @"1 Month" : @"1 Week";
-    
-    NSString *marketingString = [NSString stringWithFormat:@"Try for %@ (then %@/%@)",
-                                 trialString,
-                                 [storeProduct localizedPrice],
-                                 (product.subscriptionLength == SubscriptionTypeYearly) ? @"yr" : @"mth"];
- 
-    if (!product) {
-        marketingString = [NSString stringWithFormat:@"Buy(%@)", trialString];
-    }
-    
-    UIBarButtonItem *buttonBuy = [[UIBarButtonItem alloc] initWithTitle:marketingString
-                                                                  style:UIBarButtonItemStyleDone
-                                                                 target:self
-                                                                 action:@selector(buyPressed:)];
+    self.buttonBuy = [[UIBarButtonItem alloc] initWithTitle:@"Buy"
+                                                      style:UIBarButtonItemStyleDone
+                                                     target:self
+                                                     action:@selector(buyPressed:)];
     
     UIBarButtonItem *flexibleItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                                   target:nil
                                                                                   action:nil];
     
     toolbar.items = @[flexibleItem,
-                      buttonBuy,
+                      self.buttonBuy,
                       flexibleItem];
     
     
@@ -101,16 +89,20 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
                                                                                 @"carouselView":self.carouselView,
                                                                                 @"topLayoutGuide":self.topLayoutGuide}]];
     if(self.showsRestore) {
-        UIBarButtonItem *restoreButton = [[UIBarButtonItem alloc] initWithTitle:@"Restore"
+        self.restoreButton = [[UIBarButtonItem alloc] initWithTitle:@"Restore"
                                                                           style:UIBarButtonItemStyleDone
                                                                          target:self
                                                                          action:@selector(restorePressed:)];
-        self.navigationItem.rightBarButtonItem = restoreButton;
+        self.navigationItem.rightBarButtonItem = self.restoreButton;
     }
 
     self.title = [IAPProducts productForIdentifier:self.productIdentifier].buyTitle;
     
     self.view.backgroundColor = [UIColor blackColor];
+    
+    [self configureBuyAndRestoreButtons];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productsLoaded:) name:ProductsLoadedNotification object:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -148,6 +140,8 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
     [self.carouselView setNeedsLayout];
 }
 
+#pragma mark - RSCarouselViewDataSource
+
 -(NSInteger)numberOfItemsInCarouselView:(RSCarouselView *)corouselView {
     IAPProduct *product = [IAPProducts productForIdentifier:self.productIdentifier];
     return [product.images count];
@@ -172,6 +166,8 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
         cell.imageViewMarketing.image = item.items;
     }
 }
+
+#pragma mark - User Actions
 
 -(void) buyPressed:(UIBarButtonItem *) button {
     [self.carouselView stop];
@@ -229,6 +225,39 @@ static NSString *const IAPCellIdentifier = @"IAPCELL";
             }
         });
     }];
+}
+
+
+-(NSString *)buyStringForProduct:(IAPProduct *)product {
+    
+    NSString *marketingString = @"Waiting to Load";
+    
+    SKProduct *storeProduct = product.storeKitProduct;
+    
+    if (storeProduct) {
+        NSString *trialString = product.trialLength == TrialLengthMonth ? @"1 Month" : @"1 Week";
+        
+        marketingString = [NSString stringWithFormat:@"Try for %@ (then %@/%@)",
+                           trialString,
+                           [storeProduct localizedPrice],
+                           (product.subscriptionLength == SubscriptionTypeYearly) ? @"yr" : @"mth"];
+    }
+    
+    return marketingString;
+}
+
+-(void)configureBuyAndRestoreButtons {
+    IAPProduct *product = [IAPProducts productForIdentifier:self.productIdentifier];
+    self.buttonBuy.enabled = product.storeKitProduct != nil;
+    self.buttonBuy.title = [self buyStringForProduct:product];
+    
+    self.restoreButton.enabled = product.storeKitProduct != nil;
+}
+
+#pragma mark - Notifications
+
+-(void)productsLoaded:(NSNotification *)notification {
+    [self configureBuyAndRestoreButtons];
 }
 
 @end
