@@ -53,7 +53,6 @@ NSString *const ProductsLoadedNotification = @"ProductsLoadedNotification";
 }
 
 -(BOOL) hasPurchasedFeature:(NSString *)feature withExpiryDate:(NSDate *)expiryDate {
-    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     NSDate *today = [NSDate date];
