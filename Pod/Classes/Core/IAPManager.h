@@ -12,17 +12,17 @@
 @class SKProduct;
 @class IAPProduct;
 
-
-
 @interface IAPManager : NSObject <SKPaymentTransactionObserver>
 
 extern NSString *const ProductsLoadedNotification;
 
--(BOOL) hasPurchasedFeature:(NSString *) feature;
--(void) purchaseProduct:(SKProduct *)product withCompletion:(void(^)(NSError *))completion;
+-(BOOL)hasPurchasedFeature:(NSString *) feature;
+-(void)purchaseProduct:(SKProduct *)product withCompletion:(void(^)(NSError *))completion;
 -(void)restorePurchasesWithCompletion:(void(^)(NSError *))completion;
 -(SKProduct *)storeProductForIdentifier:(NSString *)identifier;
--(void) initializeStoreWithProducts:(NSArray<IAPProduct *> *)productsd withSharedSecret:(NSString *)secret;
+
+-(void)initializeStoreWithProducts:(NSArray<IAPProduct *> *)productsd withSharedSecret:(NSString *)secret;
+-(void)teardown;
 
 +(instancetype) sharedManager;
 

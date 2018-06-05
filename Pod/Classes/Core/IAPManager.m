@@ -175,6 +175,10 @@ NSString *const ProductsLoadedNotification = @"ProductsLoadedNotification";
     [self loadProducts];
 }
 
+-(void)teardown {
+    [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
+}
+
 -(void)loadProducts {
     NSMutableSet *set = [NSMutableSet new];
     for (IAPProduct *product in [IAPProducts products]) {

@@ -104,27 +104,27 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
                                completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                                    if (connectionError) {
                                        NSLog(@"error: %@", connectionError);
-                                   } else {
-                                       NSError *error;
-                                       NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-                                       NSInteger status = [jsonResponse[statusKey] integerValue];
-                                       if (status == 0) {
-                                           for (IAPProduct *product in [IAPProducts products]) {
-                                               [self updateDefaultsForProduct:product withReceipt:jsonResponse[LatestReceiptInfoKey]];
-                                           }
-                                           [[NSUserDefaults standardUserDefaults] setBool:YES forKey:initialExpiryUpdateKey];
-                                           [[NSUserDefaults standardUserDefaults] synchronize];
-                                           
+                                       completion(0);
+                                       return;
+                                   }
+                                   
+                                   NSError *error;
+                                   NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                   NSInteger status = [jsonResponse[statusKey] integerValue];
+                                   
+                                   if (status == 0) {
+                                       for (IAPProduct *product in [IAPProducts products]) {
+                                           [self updateDefaultsForProduct:product withReceipt:jsonResponse[LatestReceiptInfoKey]];
                                        }
-
-                                       if (completion) {
-                                           completion(status);
-                                       }
-                                       
+                                       [[NSUserDefaults standardUserDefaults] setBool:YES forKey:initialExpiryUpdateKey];
+                                       [[NSUserDefaults standardUserDefaults] synchronize];
+                                   }
+                                   
+                                   if (completion) {
+                                       completion(status);
                                    }
                                }];
     }
-    
 }
 
 -(void) updateDefaultsForProduct:(IAPProduct *)product withReceipt:(NSDictionary *)transactions {
@@ -153,8 +153,6 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 }
 
 -(void) updateUserDefaultsForProduct:(IAPProduct *)product withTransaction:(NSDictionary *)transaction {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
         NSDate *expiresDate = [NSDate dateWithTimeIntervalSince1970:([transaction[expiresDateKey] doubleValue]/1000.0)];
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -185,8 +183,6 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
             self.completion(nil);
         }
         self.completion = nil;
-        
-    });
 }
 
 -(void) productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
