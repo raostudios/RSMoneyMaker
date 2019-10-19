@@ -1,8 +1,9 @@
 #import "AppReceiptManager.h"
 #import "IAPProducts.h"
 #import "IAPProduct.h"
-#import <StoreKit/SKProductsRequest.h>
-#import <StoreKit/SKReceiptRefreshRequest.h>
+#import "PurchasableProduct.h"
+
+@import StoreKit;
 
 @interface AppReceiptManager () <SKProductsRequestDelegate>
 
@@ -46,9 +47,7 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
             [self verifyReceipt:ios7ReceiptData
                         withURL:[NSURL URLWithString:appStoreVerifyURL] withCompletion:^(NSInteger status) {
                             if (status == inSandboxStatus) {
-                                
                                 NSURL *sandboxURL = [NSURL URLWithString:sandboxVerifyURL];
-
                                 [self verifyReceipt:ios7ReceiptData
                                             withURL:sandboxURL withCompletion:^(NSInteger status) {
                                                 NSLog(@"sandbox");
@@ -123,7 +122,7 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 
     for (NSDictionary *transaction in transactions) {
         if ([self isCurrentTransaction:transaction]) {
-            NSDate *expiresDate = [NSDate dateWithTimeIntervalSince1970:([transaction[expiresDateKey] doubleValue]/1000)];
+            NSDate *expiresDate = [self dateFromString:transaction[expiresDateKey]];
             if ([expiresDate compare:[NSDate date]] == NSOrderedDescending) {
                 [self updateUserDefaultsForProduct:product withTransaction:transaction];
                 break;
@@ -137,7 +136,11 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 }
 
 -(BOOL) isCurrentTransaction:(NSDictionary *)transaction {
-    return [self isTodayPastDate:[NSDate dateWithTimeIntervalSince1970:([transaction[expiresDateKey] doubleValue]/1000)]];
+    return [self isTodayPastDate:[self dateFromString:transaction[expiresDateKey]]];
+}
+
+-(NSDate *)dateFromString:(NSString *)dateString {
+    return [NSDate dateWithTimeIntervalSince1970:([dateString doubleValue]/1000)];
 }
 
 -(BOOL) isTodayPastDate:(NSDate *)date {
@@ -145,36 +148,39 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
 }
 
 -(void) updateUserDefaultsForProduct:(IAPProduct *)product withTransaction:(NSDictionary *)transaction {
-        NSDate *expiresDate = [NSDate dateWithTimeIntervalSince1970:([transaction[expiresDateKey] doubleValue]/1000.0)];
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:[NSDate date] forKey:UpdateReceiptDate];
-        
-        if ([transaction[productIdentifierKey] isEqualToString:product.iapIdentifier]) {
-            NSString *identifier = transaction[productIdentifierKey];
-            
-            NSString *stringExpiration = [NSString stringWithFormat:defaultsExpirationKey, identifier];
+    NSDate *expiresDate = [self dateFromString:transaction[expiresDateKey]];
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSDate date] forKey:UpdateReceiptDate];
+
+    NSString *productIdentifierInTransaction = transaction[productIdentifierKey];
+
+    for (PurchasableProduct *purchasableProduct in product.purchasableProducts) {
+        if ([productIdentifierInTransaction isEqualToString:purchasableProduct.iapIdentifier]) {
+
+            NSString *stringExpiration = [NSString stringWithFormat:defaultsExpirationKey, productIdentifierInTransaction];
             [defaults setObject:expiresDate forKey:stringExpiration];
-            
-            NSString *stringForIsTrialPeriod = [NSString stringWithFormat:defaultsTrialPeriodKey, identifier];
+
+            NSString *stringForIsTrialPeriod = [NSString stringWithFormat:defaultsTrialPeriodKey, productIdentifierInTransaction];
             [defaults setBool:[transaction[trialPeriodKey] boolValue] forKey:stringForIsTrialPeriod];
-            
-            NSString *keyForProductDefault = [NSString stringWithFormat:defaultSetKey, identifier];
-            
+
+            NSString *keyForProductDefault = [NSString stringWithFormat:defaultSetKey, productIdentifierInTransaction];
+
             if (![defaults boolForKey:keyForProductDefault]) {
                 [product.defaults enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
                     [defaults setObject:obj forKey:key];
                 }];
                 [defaults setBool:YES forKey:keyForProductDefault];
             }
-            
+
             [defaults synchronize];
         }
-        
-        if (self.completion) {
-            self.completion(nil);
-        }
-        self.completion = nil;
+    }
+
+    if (self.completion) {
+        self.completion(nil);
+    }
+    self.completion = nil;
 }
 
 -(void) productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {

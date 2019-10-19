@@ -8,7 +8,7 @@
 
 #import <StoreKit/StoreKit.h>
 
-@interface SKProduct (LocalizedPrice)
+@interface SKProduct (Helpers)
 
 -(NSString *)localizedPrice;
 

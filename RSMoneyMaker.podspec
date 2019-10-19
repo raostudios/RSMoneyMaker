@@ -13,7 +13,7 @@ s.license          = 'MIT'
 s.author           = { "Venkat S. Rao" => "vrao423@gmail.com" }
 s.source           = { :git => "https://github.com/raostudios/RSMoneyMaker.git", :tag => s.version.to_s }
 s.social_media_url = 'https://twitter.com/venkatrao'
-s.platform     = :ios, '8.0'
+s.platform     = :ios, '11.2'
 s.requires_arc = true
 
 

@@ -2,6 +2,7 @@
 #import "IAPProducts.h"
 #import "AppReceiptManager.h"
 #import "IAPProduct.h"
+#import "PurchasableProduct.h"
 #import "GCNetworkReachability.h"
 
 @import StoreKit;
@@ -71,6 +72,15 @@ NSString *const ProductsLoadedNotification = @"ProductsLoadedNotification";
 -(SKProduct *) storeProductForIdentifier:(NSString *)identifier {
     for (SKProduct *product in self.products) {
         if ([product.productIdentifier isEqualToString:identifier]) {
+            return product;
+        }
+    }
+    return nil;
+}
+
+-(IAPProduct *)productForIdentifier:(NSString *)identifier {
+    for (IAPProduct *product in [IAPProducts products]) {
+        if ([product.identifier isEqual:identifier]) {
             return product;
         }
     }
@@ -173,7 +183,9 @@ NSString *const ProductsLoadedNotification = @"ProductsLoadedNotification";
 -(void)loadProducts {
     NSMutableSet *set = [NSMutableSet new];
     for (IAPProduct *product in [IAPProducts products]) {
-        [set addObject:product.iapIdentifier];
+        for (PurchasableProduct *purchasableProduct in product.purchasableProducts) {
+            [set addObject:purchasableProduct.iapIdentifier];
+        }
     }
     
     self.request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];

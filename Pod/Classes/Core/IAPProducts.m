@@ -26,8 +26,10 @@ static NSArray<IAPProduct *> *savedProducts;
 
 +(IAPProduct *) productForIdentifier:(NSString *)identifier {
     for (IAPProduct *product in savedProducts) {
-        if ([product.iapIdentifier isEqualToString:identifier]) {
-            return product;
+        for (PurchasableProduct *purchasableProduct in product.purchasableProducts) {
+            if ([purchasableProduct.iapIdentifier isEqualToString:identifier]) {
+                return product;
+            }
         }
     }
     return nil;
@@ -37,8 +39,10 @@ static NSArray<IAPProduct *> *savedProducts;
     NSMutableArray *products = [NSMutableArray new];
     
     for (IAPProduct *product in savedProducts) {
-        if ([product.productIdentifier isEqualToString:featureName]) {
-            [products addObject: product];
+        for (PurchasableProduct *purchasableProduct in product.purchasableProducts) {
+            if ([purchasableProduct.iapIdentifier isEqualToString:featureName]) {
+                [products addObject:product];
+            }
         }
     }
     
@@ -50,9 +54,11 @@ static NSArray<IAPProduct *> *savedProducts;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
     for (IAPProduct *product in products) {
-        NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, product.iapIdentifier]];
-        if ([expiryDate compare:[NSDate date]] == NSOrderedDescending) {
-            return product;
+        for (PurchasableProduct *purchasableProduct in product.purchasableProducts) {
+            NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, purchasableProduct.iapIdentifier]];
+            if ([expiryDate compare:[NSDate date]] == NSOrderedDescending) {
+                return product;
+            }
         }
     }
     

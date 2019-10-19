@@ -12,6 +12,7 @@ extern NSString *const ProductsLoadedNotification;
 -(void)purchaseProduct:(SKProduct *)product withCompletion:(void(^)(NSError *))completion;
 -(void)restorePurchasesWithCompletion:(void(^)(NSError *))completion;
 -(SKProduct *)storeProductForIdentifier:(NSString *)identifier;
+-(IAPProduct *)productForIdentifier:(NSString *)identifier;
 
 -(void)initializeStoreWithProducts:(NSArray<IAPProduct *> *)productsd withSharedSecret:(NSString *)secret;
 -(void)teardown;

@@ -1,12 +1,26 @@
-//
-//  SKProductSubscriptionPeriod+Helpers.m
-//  RSMoneyMaker
-//
-//  Created by Venkat Rao on 9/5/19.
-//
-
 #import "SKProductSubscriptionPeriod+Helpers.h"
 
-@implementation SKProductSubscriptionPeriod_Helpers
+@implementation SKProductSubscriptionPeriod(Helpers)
+
+-(NSString *)subscriptionPeriodString {
+    NSString *unitString;
+    switch (self.unit) {
+        case SKProductPeriodUnitDay:
+            unitString = @"Day";
+            break;
+        case SKProductPeriodUnitWeek:
+            unitString = @"Week";
+            break;
+        case SKProductPeriodUnitMonth:
+            unitString = @"Month";
+            break;
+        case SKProductPeriodUnitYear:
+            unitString = @"Year";
+            break;
+    }
+
+    return self.numberOfUnits == 1 ? unitString :
+    [NSString stringWithFormat:@"%ld %@s", self.numberOfUnits, unitString];
+}
 
 @end

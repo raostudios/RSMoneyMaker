@@ -9,23 +9,4 @@
     return [formatter stringFromNumber:self.price];
 }
 
--(NSString *)subscriptionPeriod:(SKProduct *)product {
-    switch (product.subscriptionPeriod.unit) {
-        case SKProductPeriodUnitDay:
-            return @"Day";
-            break;
-        case SKProductPeriodUnitWeek:
-            return @"Week";
-            break;
-        case SKProductPeriodUnitMonth:
-            return @"Month";
-            break;
-        case SKProductPeriodUnitYear:
-            return @"Year";
-            break;
-        default:
-            break;
-    }
-}
-
 @end
