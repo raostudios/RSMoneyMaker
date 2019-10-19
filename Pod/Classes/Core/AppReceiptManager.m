@@ -87,34 +87,38 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
         NSMutableURLRequest *storeRequest = [NSMutableURLRequest requestWithURL:storeURL];
         [storeRequest setHTTPMethod:@"POST"];
         [storeRequest setHTTPBody:requestData];
-        
-        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-        
-        
-        [NSURLConnection sendAsynchronousRequest:storeRequest queue:queue
-                               completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                                   if (connectionError) {
-                                       NSLog(@"error: %@", connectionError);
-                                       completion(0);
-                                       return;
-                                   }
-                                   
-                                   NSError *error;
-                                   NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-                                   NSInteger status = [jsonResponse[statusKey] integerValue];
-                                   
-                                   if (status == 0) {
-                                       for (IAPProduct *product in [IAPProducts products]) {
-                                           [self updateDefaultsForProduct:product withReceipt:jsonResponse[LatestReceiptInfoKey]];
-                                       }
-                                       [[NSUserDefaults standardUserDefaults] setBool:YES forKey:initialExpiryUpdateKey];
-                                       [[NSUserDefaults standardUserDefaults] synchronize];
-                                   }
-                                   
-                                   if (completion) {
-                                       completion(status);
-                                   }
-                               }];
+
+        [[[NSURLSession sharedSession] dataTaskWithRequest:storeRequest
+                                         completionHandler:^(NSData * _Nullable data,
+                                                             NSURLResponse * _Nullable response,
+                                                             NSError * _Nullable error) {
+            
+            if (error) {
+                NSLog(@"error: %@", error);
+                completion(0);
+                return;
+            }
+            
+            NSError *serializationError;
+            NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:0
+                                                                           error:&serializationError];
+            NSInteger status = [jsonResponse[statusKey] integerValue];
+            
+            if (status == 0) {
+                for (IAPProduct *product in [IAPProducts products]) {
+                    [self updateDefaultsForProduct:product
+                                       withReceipt:jsonResponse[LatestReceiptInfoKey]];
+                }
+                [[NSUserDefaults standardUserDefaults] setBool:YES
+                                                        forKey:initialExpiryUpdateKey];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+            }
+            
+            if (completion) {
+                completion(status);
+            }
+        }] resume];
     }
 }
 
@@ -124,7 +128,8 @@ NSString * const defaultsExpirationKey = @"%@_feature_experiration_date";
         if ([self isCurrentTransaction:transaction]) {
             NSDate *expiresDate = [self dateFromString:transaction[expiresDateKey]];
             if ([expiresDate compare:[NSDate date]] == NSOrderedDescending) {
-                [self updateUserDefaultsForProduct:product withTransaction:transaction];
+                [self updateUserDefaultsForProduct:product
+                                   withTransaction:transaction];
                 break;
             }
         }

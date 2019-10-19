@@ -37,8 +37,10 @@ NSString *const ProductsLoadedNotification = @"ProductsLoadedNotification";
     
     BOOL purchased = NO;
     for (IAPProduct *product in products) {
-        NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, product.iapIdentifier]];
-        purchased = purchased | [self hasPurchasedFeature:feature withExpiryDate:expiryDate];
+        for (PurchasableProduct *purchasableProduct in product.purchasableProducts) {
+            NSDate *expiryDate = [defaults objectForKey:[NSString stringWithFormat:defaultsExpirationKey, purchasableProduct.iapIdentifier]];
+            purchased = purchased || [self hasPurchasedFeature:feature withExpiryDate:expiryDate];
+        }
     }
     
     return purchased;
