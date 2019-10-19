@@ -1,11 +1,3 @@
-//
-//  IAPManger.h
-//  
-//
-//  Created by Rao, Venkat on 12/23/14.
-//
-//
-
 #import <Foundation/Foundation.h>
 #import <StoreKit/SKPaymentQueue.h>
 

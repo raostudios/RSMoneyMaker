@@ -1,11 +1,3 @@
-                      //
-//  AppRecieptManager.m
-//  TheBigClock
-//
-//  Created by Rao, Venkat on 2/28/15.
-//  Copyright (c) 2015 Venkat Rao. All rights reserved.
-//
-
 #import "AppReceiptManager.h"
 #import "IAPProducts.h"
 #import "IAPProduct.h"

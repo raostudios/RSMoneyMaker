@@ -1,11 +1,3 @@
-//
-//  IAPCell.m
-//  The Big Clock
-//
-//  Created by Rao, Venkat on 12/26/14.
-//  Copyright (c) 2014 Venkat Rao. All rights reserved.
-//
-
 #import "IAPCell.h"
 #import <RSInterfaceKit/UIView+AutoLayout.h>
 

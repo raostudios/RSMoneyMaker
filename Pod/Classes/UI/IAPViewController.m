@@ -1,11 +1,3 @@
-//
-//  IAPViewController.m
-//  The Big Clock
-//
-//  Created by Rao, Venkat on 12/22/14.
-//  Copyright (c) 2014 Venkat Rao. All rights reserved.
-//
-
 #import "IAPViewController.h"
 #import "IAPCell.h"
 #import "SKProduct+LocalizedPrice.h"

@@ -1,19 +1,11 @@
-//
-//  IAPProducts.m
-//  TheBigClock
-//
-//  Created by Rao, Venkat on 2/25/15.
-//  Copyright (c) 2015 Venkat Rao. All rights reserved.
-//
-
 #import "IAPProducts.h"
 #import "IAPProduct.h"
 #import "IAPMarketingItem.h"
 #import "IAPManager.h"
 #import "AppReceiptManager.h"
+#import "PurchasableProduct.h"
 
-#import <UIKit/UIKit.h>
-
+@import UIKit;
 @import StoreKit;
 
 @interface IAPProducts ()

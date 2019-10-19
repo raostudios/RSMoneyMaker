@@ -1,12 +1,3 @@
- //
-//  IAPManger.m
-//
-//
-//  Created by Rao, Venkat on 12/23/14.
-//
-//
-
-
 #import "IAPManager.h"
 #import "IAPProducts.h"
 #import "AppReceiptManager.h"
